@@ -87,7 +87,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<h1 class="main-title">Animal Information Chatbot</h1>', unsafe_allow_html=True)
-st.markdown("<h2>by Aleksandar</h2>")
+st.subheader("by Aleksandar")
 # Provide an introductory description
 st.markdown("""
 <div class="chat-container">
