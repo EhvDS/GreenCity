@@ -8,15 +8,11 @@ def main():
         layout="wide",
         initial_sidebar_state="expanded")
 
-    
-    st.sidebar.markdown("<h1 style='font-size: 24px;'>Proof of Concepts</h1>", unsafe_allow_html=True)
-    st.sidebar.title("Proof of Concepts")
-
     st.title("Interactive Tools for Sustainable Cities")
     st.markdown("We set out to investigate how digital tools could help improve \
                 (cooperative) decision-making in urban environments by offering accessible \
                 information and inspiration. \
-                This collection of proof-of-concept ideas explores different approaches: data visualization, \
+                This collection of proofs-of-concept explores different approaches: data visualization, \
                 gamification, chatbots, augmented reality etc. All interactive and sometimes even fun!\
                 Choose on the sidebar which one you want to try.")
     
