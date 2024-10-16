@@ -48,7 +48,7 @@ animal_name_mapping = {
 }
 
 # Path to your document
-document_path = r"C:\Users\alexm\OneDrive\Работен плот\MasterIT\B - Workshops\E - PoC\AnimalsTest.txt"
+document_path = "data/AnimalsTest.txt"
 
 # Load document content and build the index
 document_content = load_document(document_path)
