@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.header("Example POC")
+st.header("Example Proof of Concept")
 st.subheader("by Invited Author")
 
 st.markdown(
