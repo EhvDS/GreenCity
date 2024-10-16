@@ -58,8 +58,9 @@ document_content = load_document(document_path)
 animal_index = build_document_index(document_content)
 
 # Streamlit Interface - Enhancing the front-end
-st.set_page_config(page_title="Nature-Inclusive Construction Chatbot", page_icon="🌿", layout="centered")
-st.title("🌿 Animal Information Chatbot for Nature-Inclusive Construction")
+### Simona: i see some error about set_page_config in the logs
+### st.set_page_config(page_title="Nature-Inclusive Construction Chatbot", page_icon="🌿", layout="centered")
+### st.title("🌿 Animal Information Chatbot for Nature-Inclusive Construction")
 st.markdown("""
     <style>
     .stApp {
