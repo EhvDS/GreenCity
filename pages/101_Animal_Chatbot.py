@@ -1,7 +1,10 @@
 import streamlit as st
 import re
 from transformers import pipeline
-st.set_page_config(page_title="Animal Information Chatbot", page_icon="🌿")
+
+st.header("Animal Information Chatbot")
+st.subheader("by Aleksandar")
+
 # Initialize the Hugging Face question-answering pipeline
 qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
 
