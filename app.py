@@ -18,9 +18,9 @@ def main():
                 gamification, chatbots, augmented reality etc. All interactive and sometimes even fun!\
                 Choose on the sidebar which one you want to try.")
     
-    st.markdown("Made in winter 2024 at [Fontys ICT](https://www.fontysictinnovationlab.nl/) by students of the Applied IT Master.\
+    st.markdown("**Work in progress** by students of the Applied IT Master, [Fontys ICT](https://www.fontysictinnovationlab.nl/) .\
                 All data and code is [available](https://github.com/EhvDS/GreenCity_app) but not yet properly reviewed and checked. \
-                So :red[please don't base any serious conclusions on these proof-of-concepts(yet)].")
+                So :red[please don't base any serious conclusions on these proof-of-concepts yet].")
 
     st.markdown("Send your questions and comments to Simona Orzan ([s.orzan@fontys.nl](mailto:s.orzan@fontys.nl)).")
 
