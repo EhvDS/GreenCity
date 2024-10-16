@@ -2,8 +2,8 @@ import streamlit as st
 import re
 from transformers import pipeline
 
-st.header("Animal Information Chatbot")
-st.subheader("by Aleksandar")
+st.set_page_config(page_title="Nature-Inclusive Construction Chatbot", page_icon="🌿", layout="centered")
+### st.title("🌿 Animal Information Chatbot for Nature-Inclusive Construction")
 
 # Initialize the Hugging Face question-answering pipeline
 qa_pipeline = pipeline("question-answering", model="distilbert-base-cased-distilled-squad")
@@ -58,7 +58,7 @@ document_content = load_document(document_path)
 animal_index = build_document_index(document_content)
 
 # Streamlit Interface - Enhancing the front-end
-### Simona: i see some error about set_page_config in the logs
+### Simona: set_page_config can only be used once
 ### st.set_page_config(page_title="Nature-Inclusive Construction Chatbot", page_icon="🌿", layout="centered")
 ### st.title("🌿 Animal Information Chatbot for Nature-Inclusive Construction")
 st.markdown("""
@@ -87,7 +87,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<h1 class="main-title">Animal Information Chatbot</h1>', unsafe_allow_html=True)
-
+st.markdown("<h2>by Aleksandar</h2>")
 # Provide an introductory description
 st.markdown("""
 <div class="chat-container">
