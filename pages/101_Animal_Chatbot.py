@@ -61,46 +61,21 @@ animal_index = build_document_index(document_content)
 ### Simona: set_page_config can only be used once
 ### st.set_page_config(page_title="Nature-Inclusive Construction Chatbot", page_icon="🌿", layout="centered")
 ### st.title("🌿 Animal Information Chatbot for Nature-Inclusive Construction")
+# Page title and description
+st.title("🌿 Animal Information Chatbot for Nature-Inclusive Construction")
+st.subheader("by Aleksandar Stoyanov")
 st.markdown("""
-    <style>
-    .stApp {
-        background-image: url("https://images.unsplash.com/photo-1578324908053-c6d2dfebfe1d");
-        background-size: cover;
-    }
-    .main-title {
-        font-family: 'Courier New', Courier, monospace;
-        color: #2E8B57;
-    }
-    .chat-container {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 15px;
-    }
-    .user-query {
-        font-weight: bold;
-        color: #1F618D;
-    }
-    .bot-response {
-        color: #148F77;
-    }
-    </style>
-""", unsafe_allow_html=True)
-
-st.markdown('<h1 class="main-title">Animal Information Chatbot</h1>', unsafe_allow_html=True)
-st.subheader("by Aleksandar")
-# Provide an introductory description
-st.markdown("""
-<div class="chat-container">
-    Welcome to the **Animal Information Chatbot** designed to assist with 
-    **nature-inclusive construction** and animal habitat information. 
+Welcome to the Animal Information Chatbot designed to assist with 
+    nature-inclusive construction and animal habitat information. 
     You can ask me questions about different animals and how to create environments 
     that are friendly for their needs.
-
-    **Example Questions**:
+""")
+st.markdown("""
+ Example Questions:
     - "What can you tell me about *animal*?"
     - "Tell me about *animal*?"
 
-    **Animals you can ask about**:
+    Animals you can ask about:
     - Squirrel
     - House Martin
     - Starling
@@ -111,9 +86,7 @@ st.markdown("""
     - Amphibians
     - Bees
     - Butterflies
-</div>
-""", unsafe_allow_html=True)
-
+""")
 # User input for the chatbot
 user_query = st.text_input("Type your question here:", "")
 
