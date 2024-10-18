@@ -72,8 +72,8 @@ Welcome to the Animal Information Chatbot designed to assist with
 """)
 st.markdown("""
  Example Questions:
-    - "What can you tell me about *animal*?"
-    - "Tell me about *animal*?"
+    - "What can you tell me about **animal**?"
+    - "Tell me about **animal**?"
 
     Animals you can ask about:
     - Squirrel
