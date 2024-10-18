@@ -124,5 +124,6 @@ if user_query:
 # Display the last conversation
 if 'conversation' in st.session_state and st.session_state.conversation:
     user_input, bot_response = st.session_state.conversation[-1]
-    st.markdown(f'<div class="chat-container"><p class="user-query">**You:** {user_input}</p><p class="bot-response">**Chatbot:** {bot_response}</p></div>', unsafe_allow_html=True)
+    st.markdown(f'**You:** {user_input}')
+    st.markdown(f'**Chatbot:** {bot_response}')
 
