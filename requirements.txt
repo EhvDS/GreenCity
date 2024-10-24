@@ -1,6 +1,11 @@
 # All necessary libraries should be added here
 streamlit==1.39.0
 pandas==2.2.2
+geopandas==1.0.1
+folium==0.15.1
+shapely==2.0.6
+streamlit_folium==0.23.1
+matplotlib==3.9.2
 numpy==1.26.4
 transformers==4.45.2
 fuzzywuzzy==0.18.0
