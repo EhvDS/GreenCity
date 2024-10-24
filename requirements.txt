@@ -152,3 +152,5 @@ yarl==1.9.3
 zipp==3.17.0
 zope.event==5.0
 zope.interface==6.4.post2
+setuptools
+wheel
