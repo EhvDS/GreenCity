@@ -1,13 +1,10 @@
 import streamlit as st
 import json
 
-# Load JSON data
-with open("../data/youssef/json.json", "r") as file:
+# Load the JSON data
+with open("./data/youssef/json.json", "r") as file:
     data = json.load(file)
 items = data["items"]
-
-# Define the base directory for images
-image_base_path = "../data/youssef/images/"
 
 # Sidebar filters for Category and Target Group
 st.sidebar.header("Filter Options")
@@ -31,12 +28,8 @@ selected_item_name = None
 cols = st.columns(5)  # Five columns for the grid
 for i, item in enumerate(filtered_items):
     with cols[i % 5]:
-        # Construct the full image path
-        image_path = os.path.join(image_base_path, os.path.basename(item["image"]))
-        if os.path.exists(image_path):  # Check if the image exists
-            st.image(image_path, use_column_width=True)
-        else:
-            st.write("Image not available")
+        # Display the image
+        st.image(item["image"], use_column_width=True)
         
         # Align and style the name of the item
         if st.button(item["name"], key=item["name"]):
