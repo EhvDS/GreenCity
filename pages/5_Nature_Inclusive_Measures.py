@@ -98,7 +98,7 @@ with right_col:
 
         # Points
         st.subheader("Points")
-        st.write("Amount of nature points: " + selected_item["points"])
+        st.write("Amount of nature points: " + str(selected_item["points"]))
 
         # Sections
         st.subheader("Description")
