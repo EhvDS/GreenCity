@@ -43,8 +43,8 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Add a right border to the left column */
-    div[data-testid="column"] > div:first-child {
+    /* Apply a border to the left column */
+    [data-testid="stVerticalBlock"] > div:nth-child(1) {
         border-right: 2px solid #ccc;
         padding-right: 15px;
     }
