@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling and border-right for left_col
+# Custom CSS for button styling and border-right for the left column
 st.markdown("""
     <style>
     .stButton button {
@@ -43,7 +43,7 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Apply border-right to left column container */
+    /* Apply border-right to left column */
     .left-column-border {
         border-right: 2px solid #ccc;
         padding-right: 15px;
@@ -55,7 +55,7 @@ st.markdown("""
 left_col, right_col = st.columns([3, 2])
 
 with left_col:
-    # Add a container div for the border styling
+    # Wrap the entire content of the left column in a div with the border class
     st.markdown('<div class="left-column-border">', unsafe_allow_html=True)
     
     # Display header and grid info
