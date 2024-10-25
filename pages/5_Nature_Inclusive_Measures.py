@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling and border
+# Custom CSS for button styling
 st.markdown("""
     <style>
     .stButton button {
@@ -43,16 +43,11 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Apply a border to the left column */
-    [data-testid="stVerticalBlock"] > div:nth-child(1) {
-        border-right: 2px solid #ccc;
-        padding-right: 15px;
-    }
     </style>
 """, unsafe_allow_html=True)
 
-# Use columns to display grid and details side-by-side
-left_col, right_col = st.columns([3, 2])  # Adjust the width ratio as needed
+# Use columns to display grid and details side-by-side with a vertical divider
+left_col, mid_col, right_col = st.columns([3, 0.1, 2])  # mid_col is a narrow column for the border
 
 with left_col:
     # Display header and grid info
@@ -71,6 +66,15 @@ with left_col:
                 # Display the name of the item as a button
                 if st.button(item["name"], key=item["name"]):
                     selected_item_name = item["name"]
+
+# Add a vertical line between the columns
+with mid_col:
+    st.markdown(
+        """
+        <div style="height: 100%; width: 1px; background-color: #ccc; margin: 0 auto;"></div>
+        """, 
+        unsafe_allow_html=True
+    )
 
 with right_col:
     # Show details for the selected item in the right column
