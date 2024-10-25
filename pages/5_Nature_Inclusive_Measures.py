@@ -44,33 +44,47 @@ st.markdown(
         height: auto;
         border-radius: 10px;
     }
+    .grid-item button {
+        padding: 8px 16px;
+        margin-top: 10px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Create a grid layout with HTML and CSS
+# Use Streamlit buttons to select items
+selected_item_name = None
+
+# Create a grid layout with HTML and Streamlit buttons
 html = "<div class='grid-container'>"
-for item in filtered_items:
+for i, item in enumerate(filtered_items):
+    image_path = item["image"]
+    name = item["name"]
+    
+    # Create the grid item with image and button
     html += f"""
     <div class='grid-item'>
-        <img src='{item['image']}' alt='{item['name']}'>
-        <h3>{item['name']}</h3>
-        <form action='#' method='POST'>
-            <input type='submit' name='select_{item['name']}' value='Select' style='width: 100%; padding: 10px;'>
-        </form>
-    </div>
+        <img src='{image_path}' alt='{name}'>
+        <h3>{name}</h3>
     """
+    
+    # Add a Streamlit button for selecting the item (HTML wrapped)
+    if st.button(f"Select {name}", key=i):
+        selected_item_name = name
+    
+    html += "</div>"
+
 html += "</div>"
 
-# Render the grid with Streamlit
+# Render the HTML grid layout
 st.markdown(html, unsafe_allow_html=True)
-
-# Check which item was selected
-selected_item_name = None
-for item in filtered_items:
-    if st.session_state.get(f"select_{item['name']}"):
-        selected_item_name = item["name"]
 
 # Show details for the selected item
 if selected_item_name:
