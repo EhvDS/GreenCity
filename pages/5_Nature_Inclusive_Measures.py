@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling and a fixed vertical divider
+# Custom CSS for button styling and an absolute-positioned divider
 st.markdown("""
     <style>
     .stButton button {
@@ -43,22 +43,27 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Vertical divider styling */
+    /* Divider styling using absolute positioning */
     .divider {
-        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
         width: 2px;
         background-color: white;
-        display: inline-block;
-        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    .stColumns > div {
+    .container {
+        position: relative;
         display: flex;
-        align-items: stretch;
+        align-items: flex-start;
+        height: 100%;
     }
     </style>
 """, unsafe_allow_html=True)
 
 # Use columns to display grid and details side-by-side with a vertical divider
+st.markdown('<div class="container">', unsafe_allow_html=True)
 left_col, mid_col, right_col = st.columns([3, 0.05, 2])
 
 with left_col:
@@ -79,7 +84,7 @@ with left_col:
                 if st.button(item["name"], key=item["name"]):
                     selected_item_name = item["name"]
 
-# Add the vertical line in the middle column
+# Insert the divider in the middle column
 with mid_col:
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
@@ -101,3 +106,6 @@ with right_col:
         for guideline in selected_item["guidelines"]["options"]:
             st.write(f"*{guideline['title']}*")
             st.write(guideline["text"])
+
+# Close the container div
+st.markdown('</div>', unsafe_allow_html=True)
