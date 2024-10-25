@@ -50,7 +50,7 @@ st.markdown("""
 
 # Adjust grid layout
 
-st.header("📋 Urban Planning Dashboard")
+st.header("📋 Nature Inclusive Measures")
 
 for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4 (one row per loop)
     cols = st.columns(4)  # Create exactly 4 columns per row
