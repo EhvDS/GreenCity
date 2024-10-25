@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling
+# Custom CSS for button styling and divider
 st.markdown("""
     <style>
     .stButton button {
@@ -43,30 +43,29 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
+    /* Flex container for columns to make divider full height */
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+    }
+    /* Divider styling */
+    .divider {
+        width: 1px;
+        background-color: white;
+        margin: 0 auto;
+    }
     </style>
 """, unsafe_allow_html=True)
 
 # Use columns to display grid and details side-by-side with a vertical divider
-left_col, mid_col, right_col = st.columns([3, 0.1, 2])  # mid_col is a narrow column for the border
+# Wrap left_col, mid_col, right_col in a flex container
+st.markdown('<div class="flex-container">', unsafe_allow_html=True)
+left_col, mid_col, right_col = st.columns([3, 0.05, 2])
 
 with left_col:
     # Display header and grid info
     st.header("📋 Nature Inclusive Measures")
     st.info("Select an item from the grid to display its details on the right.")
-    st.markdown("""
-    <div style="background-color: #FFF3CD; padding: 1rem; border-radius: 5px; color: #856404; font-size: 1rem;">
-        <strong>For more information on nature inclusive measures, discover the NEST inclusive platform.</strong>
-        <br>
-        <a href="https://natuurinclusiefontwikkelen.nl/" target="_blank" style="color: #856404; text-decoration: underline;">
-            Explore actions you can take!
-        </a>
-        <br>   
-        <a href="https://nestnatuurinclusief.nl/referenties/" target="_blank" style="color: #856404; text-decoration: underline;">
-            Explore NEST projects!
-        </a>
-    </div>
-    """, unsafe_allow_html=True)
-    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
     
     # Display the grid layout of items in a 4-column grid within the left column
     selected_item_name = None
@@ -81,24 +80,15 @@ with left_col:
                 if st.button(item["name"], key=item["name"]):
                     selected_item_name = item["name"]
 
-# Add a vertical line between the columns
+# Add the vertical line in the middle column, which should now fill the full height
 with mid_col:
-    st.markdown(
-        """
-        <div style="height: max-content; width: 1px; background-color: #fff; margin: 0 auto;"></div>
-        """, 
-        unsafe_allow_html=True
-    )
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
 with right_col:
     # Show details for the selected item in the right column
     if selected_item_name:
         selected_item = next(item for item in items if item["name"] == selected_item_name)
         st.header("Selected: " + selected_item["name"])
-
-        # Points
-        st.subheader("Points")
-        st.write("Amount of nature points: " + str(selected_item["points"]))
 
         # Sections
         st.subheader("Description")
@@ -109,19 +99,9 @@ with right_col:
 
         # Guidelines
         st.subheader("Guidelines")
-        if "options" in selected_item["guidelines"] and selected_item["guidelines"]["options"]:
-            st.subheader("Guidelines")
-            
-            for guideline in selected_item["guidelines"]["options"]:
-                # Check if 'title' is empty and display "Empty." if so
-                title = guideline.get("title", "").strip()
-                if title == "":
-                    st.write("Empty.")
-                else:
-                    st.write(f"*{title}*")
-                
-                # Display the text for each guideline, regardless of whether the title is empty
-                st.write(guideline["text"])
-        else:
-            # If no guidelines options exist, show "Empty." directly without a header
-            st.write("Empty.")
+        for guideline in selected_item["guidelines"]["options"]:
+            st.write(f"*{guideline['title']}*")
+            st.write(guideline["text"])
+
+# Close the flex container div
+st.markdown('</div>', unsafe_allow_html=True)
