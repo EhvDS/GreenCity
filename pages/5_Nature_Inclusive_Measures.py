@@ -24,6 +24,19 @@ filtered_items = [
 # Display the items in a 4-column grid view with more spacing
 selected_item_name = None
 
+# Define CSS to apply consistent width/height to buttons
+st.markdown("""
+    <style>
+    .button {
+        display: block;
+        width: 100%;
+        height: 60px; /* Adjust height */
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # Adjust grid layout
 for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4
     cols = st.columns(4)  # Create 4 equal-width columns
@@ -32,8 +45,8 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
             # Display the image in the column
             st.image(item["image"], use_column_width=True)
             
-            # Display the name of the item in bold, center aligned
-            if st.button(item["name"], key=item["name"]):
+            # Display the name of the item as a button with fixed height/width
+            if st.markdown(f"<button class='button'>{item['name']}</button>", unsafe_allow_html=True):
                 selected_item_name = item["name"]
 
 # Show details for the selected item
