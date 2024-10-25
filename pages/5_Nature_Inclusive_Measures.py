@@ -21,6 +21,19 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))  # Safely handle missing "Target group" key
 ]
 
+# Add JavaScript code to scroll to the selected section
+scroll_script = """
+    <script>
+    function scrollToSection() {
+        var element = document.getElementById("details_section");
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+"""
+st.markdown(scroll_script, unsafe_allow_html=True)
+
 # Display the items in a 4-column grid view with more spacing
 selected_item_name = None
 
@@ -44,7 +57,6 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    
     </style>
 """, unsafe_allow_html=True)
 
@@ -63,11 +75,15 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
             # Display the name of the item as a button
             if st.button(item["name"], key=item["name"]):
                 selected_item_name = item["name"]
+                # Trigger the JavaScript scroll when an item is selected
+                st.markdown("<script>scrollToSection();</script>", unsafe_allow_html=True)
 
 # Show details for the selected item
 if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
-    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
+    
+    # Add an anchor so we can scroll to this section
+    st.markdown("<hr style='border:1px solid gray;' id='details_section'>", unsafe_allow_html=True)
     
     st.header("Selected: " + selected_item["name"])
 
@@ -75,7 +91,7 @@ if selected_item_name:
     st.subheader("Description")
     for section in selected_item["sections"]:
         if section['header'].strip():  # Only display the header if it's not empty or just whitespace
-                st.write(f"**{section['header']}**")
+            st.write(f"**{section['header']}**")
         st.write(section["text"])  # Always display the text
 
     # Guidelines
