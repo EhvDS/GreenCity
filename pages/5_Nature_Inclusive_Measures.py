@@ -58,8 +58,11 @@ st.markdown("""
     <div style="background-color: #FFF3CD; padding: 1rem; border-radius: 5px; color: #856404; font-size: 1rem;">
         <strong>For more information on nature inclusive measures, discover the NEST inclusive platform.</strong>
         <br>
-        <a href="https://example.com" target="_blank" style="color: #856404; text-decoration: underline;">
+        <a href="https://natuurinclusiefontwikkelen.nl/" target="_blank" style="color: #856404; text-decoration: underline;">
             Explore actions you can take!
+        </a>
+        <a href="https://nestnatuurinclusief.nl/referenties/" target="_blank" style="color: #856404; text-decoration: underline;">
+            Explore NEST projects!
         </a>
     </div>
 """, unsafe_allow_html=True)
