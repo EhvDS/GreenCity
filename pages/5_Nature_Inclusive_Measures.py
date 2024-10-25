@@ -110,8 +110,9 @@ with right_col:
         # Guidelines
         st.subheader("Guidelines")
         for guideline in selected_item["guidelines"]["options"]:
-            if selected_item["guidelines"]["header"] == "":
-                st.write("Empty.")
-            else:
-                st.write(f"*{guideline['title']}*")
-                st.write(guideline["text"])
+                # Check if the 'title' field is empty
+                if guideline.get("title", "").strip() == "":
+                    st.write("Empty.")
+                else:
+                    st.write(f"*{guideline['title']}*")
+                st.write(guideline["text"])  # Display the text even if title is empty
