@@ -44,6 +44,12 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
+    /* Remove unwanted borders or lines from components */
+    .block-container {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+    }
     </style>
 """, unsafe_allow_html=True)
 
@@ -66,7 +72,7 @@ if selected_item_name:
 
     # Sections
     st.subheader("Description")
-    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
+    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)  # Keep intended hr
     for section in selected_item["sections"]:
         st.write(f"**{section['header']}**")
         st.write(section["text"])
@@ -74,7 +80,7 @@ if selected_item_name:
     # Guidelines
     st.markdown("<br/><br/>", unsafe_allow_html=True)
     st.subheader("Guidelines")
-    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
+    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)  # Keep intended hr
     for guideline in selected_item["guidelines"]["options"]:
         st.write(f"**{guideline['title']}**")
         st.write(guideline["text"])
