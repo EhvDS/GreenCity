@@ -96,6 +96,10 @@ with right_col:
         selected_item = next(item for item in items if item["name"] == selected_item_name)
         st.header("Selected: " + selected_item["name"])
 
+        # Points
+        st.subheader("Points")
+        st.write(selected_item["points"])
+
         # Sections
         st.subheader("Description")
         for section in selected_item["sections"]:
