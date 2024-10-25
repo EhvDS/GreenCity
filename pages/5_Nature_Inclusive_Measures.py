@@ -6,6 +6,8 @@ with open("./data/youssef/json.json", "r") as file:
     data = json.load(file)
 items = data["items"]
 
+st.set_page_config(page_title="Nature Inclusive Measures", layout='wide', initial_sidebar_state="expanded")
+
 # Sidebar filters for Category and Target Group
 st.sidebar.header("Filter Options")
 available_categories = list(set([item["categories"] for item in items]))
