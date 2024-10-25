@@ -9,7 +9,8 @@ items = data["items"]
 # Sidebar filters for Category and Target Group
 st.sidebar.header("Filter Options")
 available_categories = list(set([item["categories"] for item in items]))
-available_target_groups = list(set([group for item in items for group in item["Target group"]]))
+available_target_groups = list(set([group for item in items if "Target group" in item for group in item["Target group"]]))
+
 
 selected_category = st.sidebar.selectbox("Select Category", ["All"] + available_categories)
 selected_target_group = st.sidebar.selectbox("Select Target Group", ["All"] + available_target_groups)
