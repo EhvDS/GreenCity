@@ -74,9 +74,7 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
         with cols[j]:
             # Display the image in the column, ensuring a consistent size
             st.image(item["image"], use_column_width=True)
-            
+
             # Display the name of the item as a button
             if st.button(item["name"], key=item["name"]):
-                if st.session_state.selected_item != item:  # Check if it's a new selection
-                    st.session_state.selected_item = item  # Store selected item in session state
-                    st.experimental_rerun()  # Immediately rerun the app to show details above
+                st.session_state.selected_item = item  # Store selected item in session state
