@@ -46,12 +46,10 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    
     </style>
 """, unsafe_allow_html=True)
 
-# Adjust grid layout
-
+# Display header and information section
 st.header("📋 Nature Inclusive Measures")
 st.info("The selected item data will be loaded below the grid with all the items.")
 st.markdown("""
@@ -67,8 +65,14 @@ st.markdown("""
         </a>
     </div>
 """, unsafe_allow_html=True)
+
+# Display the selected item name above the grid if an item is selected
+if selected_item_name:
+    st.subheader(f"Selected Item: {selected_item_name}")
+
 st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
 
+# Adjust grid layout for items
 for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4 (one row per loop)
     cols = st.columns(4)  # Create exactly 4 columns per row
     for j, item in enumerate(filtered_items[i:i+4]):  # Populate the row with up to 4 items
@@ -80,7 +84,7 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
             if st.button(item["name"], key=item["name"]):
                 selected_item_name = item["name"]
 
-# Show details for the selected item
+# Show details for the selected item below the grid
 if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
     st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
@@ -91,7 +95,7 @@ if selected_item_name:
     st.subheader("Description")
     for section in selected_item["sections"]:
         if section['header'].strip():  # Only display the header if it's not empty or just whitespace
-                st.write(f"*{section['header']}*") 
+            st.write(f"*{section['header']}*") 
         st.write(section["text"])  # Always display the text
 
     # Guidelines
