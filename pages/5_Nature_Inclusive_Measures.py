@@ -21,11 +21,34 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item["Target group"])
 ]
 
-# Display the items in a 4-column grid view with spacing and image resizing
+# Display the items in a 4-column grid view with more spacing
+selected_item_name = None
+
+# Adjust grid layout
 for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4
-    cols = st.columns([1, 1, 1, 1])  # Create 4 equal-width columns
-    for idx, item in enumerate(filtered_items[i:i+4]):  # Access a group of 4 items at a time
-        with cols[idx]:
-            st.image(item["image"], width=120)  # Adjust the image size to prevent overlapping
-            st.write(item["title"])  # Display the title of the item
-            st.write(item["description"])  # You can also add descriptions or other details if necessary
+    cols = st.columns(4)  # Create 4 equal-width columns
+    for j, item in enumerate(filtered_items[i:i+4]):  # Create groups of 4 items
+        with cols[j]:
+            # Display the image in the column
+            st.image(item["image"], use_column_width=True)
+            
+            # Display the name of the item in bold, center aligned
+            if st.button(item["name"], key=item["name"]):
+                selected_item_name = item["name"]
+
+# Show details for the selected item
+if selected_item_name:
+    selected_item = next(item for item in items if item["name"] == selected_item_name)
+    st.header(selected_item["name"])
+
+    # Sections
+    st.subheader("Sections")
+    for section in selected_item["sections"]:
+        st.write(f"**{section['header']}**")
+        st.write(section["text"])
+
+    # Guidelines
+    st.subheader("Guidelines")
+    for guideline in selected_item["guidelines"]["options"]:
+        st.write(f"**{guideline['title']}**")
+        st.write(guideline["text"])
