@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling and divider
+# Custom CSS for button styling
 st.markdown("""
     <style>
     .stButton button {
@@ -43,32 +43,11 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Divider styling */
-    .divider {
-        width: 2px;
-        background-color: white;
-        margin: 0 auto;
-    }
     </style>
 """, unsafe_allow_html=True)
 
-# JavaScript to set divider height dynamically
-st.markdown("""
-    <script>
-    function setDividerHeight() {
-        var leftCol = document.querySelector('div[data-testid="stVerticalBlock"] > div:first-child');
-        var divider = document.querySelector('.divider');
-        if (leftCol && divider) {
-            divider.style.height = leftCol.offsetHeight + 'px';
-        }
-    }
-    window.addEventListener('load', setDividerHeight);
-    window.addEventListener('resize', setDividerHeight);
-    </script>
-""", unsafe_allow_html=True)
-
 # Use columns to display grid and details side-by-side with a vertical divider
-left_col, mid_col, right_col = st.columns([3, 0.05, 2])  # mid_col is a narrow column for the border
+left_col, mid_col, right_col = st.columns([3, 0.1, 2])  # mid_col is a narrow column for the border
 
 with left_col:
     # Display header and grid info
@@ -88,9 +67,14 @@ with left_col:
                 if st.button(item["name"], key=item["name"]):
                     selected_item_name = item["name"]
 
-# Add the vertical line in the middle column
+# Add a vertical line between the columns
 with mid_col:
-    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+    st.markdown(
+        """
+        <div style="height: 100%; width: 1px; background-color: #ccc; margin: 0 auto;"></div>
+        """, 
+        unsafe_allow_html=True
+    )
 
 with right_col:
     # Show details for the selected item in the right column
