@@ -21,70 +21,17 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item["Target group"])
 ]
 
-# Add custom CSS for the grid layout and spacing
-st.markdown(
-    """
-    <style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);  /* 4 columns */
-        gap: 20px;  /* Spacing between grid items */
-    }
-    .grid-item {
-        text-align: center;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        background-color: #f9f9f9;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    .grid-item img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    .grid-item button {
-        padding: 8px 16px;
-        margin-top: 10px;
-        font-size: 14px;
-        border: none;
-        border-radius: 5px;
-        background-color: #007bff;
-        color: white;
-        cursor: pointer;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
-# Use Streamlit buttons to select items
+# Display the items in a 4-column grid view with more spacing
 selected_item_name = None
-
-# Create a grid layout with HTML and Streamlit buttons
-html = "<div class='grid-container'>"
+cols = st.columns(4)  # Four columns for better spacing
 for i, item in enumerate(filtered_items):
-    image_path = item["image"]
-    name = item["name"]
-    
-    # Create the grid item with image and button
-    html += f"""
-    <div class='grid-item'>
-        <img src='{image_path}' alt='{name}'>
-        <h3>{name}</h3>
-    """
-    
-    # Add a Streamlit button for selecting the item (HTML wrapped)
-    if st.button(f"Select {name}", key=i):
-        selected_item_name = name
-    
-    html += "</div>"
-
-html += "</div>"
-
-# Render the HTML grid layout
-st.markdown(html, unsafe_allow_html=True)
+    with cols[i % 4]:
+        # Display the image
+        st.image(item["image"], use_column_width=True)
+        
+        # Display the name of the item in bold, center aligned
+        if st.button(item["name"], key=item["name"]):
+            selected_item_name = item["name"]
 
 # Show details for the selected item
 if selected_item_name:
