@@ -69,7 +69,7 @@ if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
     st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
     
-    st.header("Selected:" + selected_item["name"])
+    st.header("Selected: " + selected_item["name"])
 
     # Sections
     st.subheader("Description")
