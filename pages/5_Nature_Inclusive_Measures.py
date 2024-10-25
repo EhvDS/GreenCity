@@ -76,12 +76,12 @@ if selected_item_name:
     st.subheader("Description")
     for section in selected_item["sections"]:
         if section['header'].strip():  # Only display the header if it's not empty or just whitespace
-                st.write(f"**{section['header']}**")
+                st.write(f"*{section['header']}*") 
         st.write(section["text"])  # Always display the text
 
     # Guidelines
     st.markdown("<br/><br/>", unsafe_allow_html=True)
     st.subheader("Guidelines")
     for guideline in selected_item["guidelines"]["options"]:
-        st.write(f"**{guideline['title']}**")
+        st.write(f"*{guideline['title']}*")
         st.write(guideline["text"])
