@@ -24,35 +24,39 @@ filtered_items = [
 # Display the items in a 4-column grid view with more spacing
 selected_item_name = None
 
-# Define CSS to apply consistent width/height to buttons and handle text overflow
+# CSS for forcing the height of buttons to the same value
 st.markdown("""
     <style>
     .stButton button {
         width: 100%;
-        height: 60px; /* Adjust height */
+        height: auto;
+        min-height: 60px;
         font-size: 16px;
         margin-top: 10px;
+        padding: 10px;
         word-wrap: break-word;  /* Ensure text wraps */
-        text-overflow: ellipsis; /* Prevent overflow */
-        padding: 5px;
+        white-space: normal;  /* Allow multiple lines in the button */
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .stButton {
+        display: flex;
+        flex-direction: column;
     }
     </style>
 """, unsafe_allow_html=True)
 
 # Adjust grid layout
-for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4
-    cols = st.columns(4)  # Create 4 equal-width columns
-    for j, item in enumerate(filtered_items[i:i+4]):  # Create groups of 4 items
-        with cols[j]:
-            # Display the image in the column
-            st.image(item["image"], use_column_width=True)
-            
-            # Display the name of the item as a button with fixed height/width
-            if st.button(item["name"], key=item["name"]):
-                selected_item_name = item["name"]
+cols = st.columns(4)  # Create 4 equal-width columns
+for i, item in enumerate(filtered_items):  # Loop through the items
+    with cols[i % 4]:  # Distribute items across 4 columns
+        # Display the image in the column
+        st.image(item["image"], use_column_width=True)
+        
+        # Display the name of the item as a button that will be resized based on the longest text
+        if st.button(item["name"], key=item["name"]):
+            selected_item_name = item["name"]
 
 # Show details for the selected item
 if selected_item_name:
