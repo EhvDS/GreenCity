@@ -70,9 +70,9 @@ if selected_item_name:
 
     # Sections
     st.subheader("Description")
-    # for section in selected_item["sections"]:
-    #     st.write(f"**{section['header']}**")
-    #     st.write(section["text"])
+    for section in selected_item["sections"]:
+        st.write(f"**{section['header']}**")
+        st.write(section["text"])
 
     # # Guidelines
     # st.markdown("<br/><br/>", unsafe_allow_html=True)
