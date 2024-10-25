@@ -21,18 +21,17 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item["Target group"])
 ]
 
-# Display the items in a 4-column grid view for more spacing
+# Display the items in a 4-column grid view with more spacing
 selected_item_name = None
-cols = st.columns(4)  # Four columns for the grid
+cols = st.columns(4)  # Four columns for better spacing
 for i, item in enumerate(filtered_items):
     with cols[i % 4]:
         # Display the image
         st.image(item["image"], use_column_width=True)
         
-        # Align and style the name of the item
+        # Display the name of the item in bold, center aligned
         if st.button(item["name"], key=item["name"]):
             selected_item_name = item["name"]
-        st.write(f"<div style='text-align: center; margin-top: -10px; font-weight: bold;'>{item['name']}</div>", unsafe_allow_html=True)
 
 # Show details for the selected item
 if selected_item_name:
