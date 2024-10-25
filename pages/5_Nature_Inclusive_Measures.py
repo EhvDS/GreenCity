@@ -61,6 +61,7 @@ st.markdown("""
         <a href="https://natuurinclusiefontwikkelen.nl/" target="_blank" style="color: #856404; text-decoration: underline;">
             Explore actions you can take!
         </a>
+        <br>   
         <a href="https://nestnatuurinclusief.nl/referenties/" target="_blank" style="color: #856404; text-decoration: underline;">
             Explore NEST projects!
         </a>
