@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling
+# Custom CSS for button styling and full-height line
 st.markdown("""
     <style>
     .stButton button {
@@ -42,6 +42,13 @@ st.markdown("""
     .stButton {
         display: flex;
         flex-direction: column;
+    }
+    /* Vertical divider styling to fill container height */
+    .divider {
+        height: 100%;
+        width: 2px;
+        background-color: white;
+        margin: 0 auto;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -69,12 +76,7 @@ with left_col:
 
 # Add a permanent white vertical line between the columns
 with mid_col:
-    st.markdown(
-        """
-        <div style="height: 100vh; width: 2px; background-color: white; margin: 0 auto;"></div>
-        """, 
-        unsafe_allow_html=True
-    )
+    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
 with right_col:
     # Show details for the selected item in the right column
