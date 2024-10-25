@@ -77,5 +77,6 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
             
             # Display the name of the item as a button
             if st.button(item["name"], key=item["name"]):
-                st.session_state.selected_item = item  # Store selected item in session state
-                st.experimental_rerun()  # Immediately rerun the app to show details above
+                if st.session_state.selected_item != item:  # Check if it's a new selection
+                    st.session_state.selected_item = item  # Store selected item in session state
+                    st.experimental_rerun()  # Immediately rerun the app to show details above
