@@ -75,6 +75,7 @@ if selected_item_name:
         st.write(section["text"])
 
     # Guidelines
+    st.markdown("<br/><br/>", unsafe_allow_html=True)
     st.subheader("Guidelines")
     for guideline in selected_item["guidelines"]["options"]:
         st.write(f"**{guideline['title']}**")
