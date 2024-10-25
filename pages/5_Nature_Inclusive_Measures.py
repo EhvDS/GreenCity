@@ -53,6 +53,20 @@ with left_col:
     # Display header and grid info
     st.header("📋 Nature Inclusive Measures")
     st.info("Select an item from the grid to display its details on the right.")
+    st.markdown("""
+    <div style="background-color: #FFF3CD; padding: 1rem; border-radius: 5px; color: #856404; font-size: 1rem;">
+        <strong>For more information on nature inclusive measures, discover the NEST inclusive platform.</strong>
+        <br>
+        <a href="https://natuurinclusiefontwikkelen.nl/" target="_blank" style="color: #856404; text-decoration: underline;">
+            Explore actions you can take!
+        </a>
+        <br>   
+        <a href="https://nestnatuurinclusief.nl/referenties/" target="_blank" style="color: #856404; text-decoration: underline;">
+            Explore NEST projects!
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
     
     # Display the grid layout of items in a 4-column grid within the left column
     selected_item_name = None
