@@ -2,7 +2,7 @@ import streamlit as st
 import json
 
 # Load the JSON data
-with open("json.json", "r") as file:
+with open("../data/youssef/json.json", "r") as file:
     data = json.load(file)
 items = data["items"]
 
