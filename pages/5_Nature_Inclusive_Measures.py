@@ -51,6 +51,7 @@ st.markdown("""
 # Adjust grid layout
 
 st.header("📋 Nature Inclusive Measures")
+st.info("The selected item data will be loaded below the grid with all the items.")
 st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
 
 for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4 (one row per loop)
