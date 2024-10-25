@@ -1,16 +1,18 @@
 import streamlit as st
 import json
 
-# Load the JSON data
-with open("./data/youssef/json.json", "r") as file:
+# Load JSON data
+with open("../data/youssef/json.json", "r") as file:
     data = json.load(file)
 items = data["items"]
+
+# Define the base directory for images
+image_base_path = "../data/youssef/images/"
 
 # Sidebar filters for Category and Target Group
 st.sidebar.header("Filter Options")
 available_categories = list(set([item["categories"] for item in items]))
 available_target_groups = list(set([group for item in items if "Target group" in item for group in item["Target group"]]))
-
 
 selected_category = st.sidebar.selectbox("Select Category", ["All"] + available_categories)
 selected_target_group = st.sidebar.selectbox("Select Target Group", ["All"] + available_target_groups)
@@ -29,7 +31,12 @@ selected_item_name = None
 cols = st.columns(3)
 for i, item in enumerate(filtered_items):
     with cols[i % 3]:
-        st.image(item["image"], use_column_width=True)
+        # Construct the full image path
+        image_path = os.path.join(image_base_path, os.path.basename(item["image"]))
+        if os.path.exists(image_path):  # Check if the image exists
+            st.image(image_path, use_column_width=True)
+        else:
+            st.write("Image not available")
         if st.button(item["name"]):
             selected_item_name = item["name"]
 
@@ -49,11 +56,3 @@ if selected_item_name:
     for guideline in selected_item["guidelines"]["options"]:
         st.write(f"**{guideline['title']}**")
         st.write(guideline["text"])
-
-# st.header("Example Proof of Concept")
-# st.subheader("by Invited Author")
-
-# st.markdown(
-#     '<h1 style="font-size:100px;">🚣</h1>', 
-#     unsafe_allow_html=True
-# )
