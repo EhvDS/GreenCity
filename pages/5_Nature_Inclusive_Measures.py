@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling and full-height line
+# Custom CSS for button styling and divider
 st.markdown("""
     <style>
     .stButton button {
@@ -43,14 +43,28 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Vertical divider styling to fill container height */
+    /* Divider styling */
     .divider {
-        height: 100%;
         width: 2px;
         background-color: white;
         margin: 0 auto;
     }
     </style>
+""", unsafe_allow_html=True)
+
+# JavaScript to set divider height dynamically
+st.markdown("""
+    <script>
+    function setDividerHeight() {
+        var leftCol = document.querySelector('div[data-testid="stVerticalBlock"] > div:first-child');
+        var divider = document.querySelector('.divider');
+        if (leftCol && divider) {
+            divider.style.height = leftCol.offsetHeight + 'px';
+        }
+    }
+    window.addEventListener('load', setDividerHeight);
+    window.addEventListener('resize', setDividerHeight);
+    </script>
 """, unsafe_allow_html=True)
 
 # Use columns to display grid and details side-by-side with a vertical divider
@@ -74,7 +88,7 @@ with left_col:
                 if st.button(item["name"], key=item["name"]):
                     selected_item_name = item["name"]
 
-# Add a permanent white vertical line between the columns
+# Add the vertical line in the middle column
 with mid_col:
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
 
