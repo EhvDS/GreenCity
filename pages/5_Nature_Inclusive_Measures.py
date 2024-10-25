@@ -110,9 +110,9 @@ with right_col:
         # Guidelines
         st.subheader("Guidelines")
         for guideline in selected_item["guidelines"]["options"]:
-            title = guideline.get("title", "").strip()  # Get title and remove extra whitespace
-            if title:  # Check if title is not empty
-                st.write(f"*{title}*")
-            else:
+            # Check if 'title' is an empty string
+            if guideline.get("title", "").strip() == "":
                 st.write("Empty.")
+            else:
+                st.write(f"*{guideline['title']}*")
             st.write(guideline["text"])  # Display the guideline text regardless
