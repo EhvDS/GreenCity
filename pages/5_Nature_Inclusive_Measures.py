@@ -68,9 +68,8 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
 if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
     st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
-    st.markdown("<br/><br/>", unsafe_allow_html=True)
     
-    st.header(selected_item["name"])
+    st.header("Selected:" + selected_item["name"])
 
     # Sections
     st.subheader("Description")
