@@ -100,4 +100,37 @@ with st.container():
 
 # Right column
 with st.container():
-    st.markdown('<div class="right-column">', unsafe_allow_html=True
+    st.markdown('<div class="right-column">', unsafe_allow_html=True)
+    
+    if selected_item_name:
+        selected_item = next(item for item in items if item["name"] == selected_item_name)
+        st.header("Selected: " + selected_item["name"])
+
+        # Points
+        st.subheader("Points")
+        st.write("Amount of nature points: " + str(selected_item["points"]))
+
+        # Sections
+        st.subheader("Description")
+        for section in selected_item["sections"]:
+            if section['header'].strip():  # Only display the header if it's not empty or just whitespace
+                st.write(f"*{section['header']}*") 
+            st.write(section["text"])  # Always display the text
+
+        # Guidelines
+        st.subheader("Guidelines")
+        if "options" in selected_item["guidelines"] and selected_item["guidelines"]["options"]:
+            for guideline in selected_item["guidelines"]["options"]:
+                # Check if 'title' is empty and display "Empty." if so
+                title = guideline.get("title", "").strip()
+                if title == "":
+                    st.write("Empty.")
+                else:
+                    st.write(f"*{title}*")
+                st.write(guideline["text"])  # Display the text for each guideline, regardless of whether the title is empty
+        else:
+            st.write("Empty.")
+    
+    st.markdown('</div>', unsafe_allow_html=True)  # Close the right column div
+
+st.markdown('</div>', unsafe_allow_html=True)  # Close the flex container div
