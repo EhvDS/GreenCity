@@ -18,7 +18,7 @@ selected_target_group = st.sidebar.selectbox("Select Target Group", ["All"] + av
 filtered_items = [
     item for item in items
     if (selected_category == "All" or item["categories"] == selected_category) and
-       (selected_target_group == "All" or selected_target_group in item["Target group"])
+       (selected_target_group == "All" or selected_target_group in item.get("Target group", []))  # Safely handle missing "Target group" key
 ]
 
 # Display the items in a 4-column grid view with more spacing
