@@ -44,10 +44,14 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
+    
     </style>
 """, unsafe_allow_html=True)
 
 # Adjust grid layout
+
+st.header("📋 Urban Planning Dashboard")
+
 for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4 (one row per loop)
     cols = st.columns(4)  # Create exactly 4 columns per row
     for j, item in enumerate(filtered_items[i:i+4]):  # Populate the row with up to 4 items
@@ -63,7 +67,7 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
 if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
     st.header(selected_item["name"])
-    st.subheader("Description")
+    # st.subheader("Description")
 
     # Sections
     # st.subheader("Description")
