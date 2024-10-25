@@ -65,14 +65,14 @@ if selected_item_name:
     st.header(selected_item["name"])
 
     # Sections
-    st.subheader("Description")
+    # st.subheader("Description")
     for section in selected_item["sections"]:
         st.write(f"**{section['header']}**")
         st.write(section["text"])
 
     # Guidelines
     st.markdown("<br/><br/>", unsafe_allow_html=True)
-
+    # st.subheader("Guidelines")
     for guideline in selected_item["guidelines"]["options"]:
         st.write(f"**{guideline['title']}**")
         st.write(guideline["text"])
