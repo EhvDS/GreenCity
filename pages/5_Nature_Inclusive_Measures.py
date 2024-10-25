@@ -21,13 +21,11 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item["Target group"])
 ]
 
-# Display the items in a 5-column grid view
-st.title("Ecological Projects Overview")
-
+# Display the items in a 4-column grid view for more spacing
 selected_item_name = None
-cols = st.columns(5)  # Five columns for the grid
+cols = st.columns(4)  # Four columns for the grid
 for i, item in enumerate(filtered_items):
-    with cols[i % 5]:
+    with cols[i % 4]:
         # Display the image
         st.image(item["image"], use_column_width=True)
         
