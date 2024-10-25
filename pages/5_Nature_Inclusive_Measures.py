@@ -63,6 +63,7 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
 if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
     st.header(selected_item["name"])
+    st.subheader("Description")
 
     # Sections
     # st.subheader("Description")
