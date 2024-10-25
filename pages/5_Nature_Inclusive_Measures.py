@@ -24,7 +24,7 @@ filtered_items = [
 # Display the items in a 4-column grid view with more spacing
 selected_item_name = None
 
-# CSS for forcing the height of buttons to the same value
+# Define CSS to apply fixed width/height to buttons and handle text overflow
 st.markdown("""
     <style>
     .stButton button {
@@ -34,8 +34,8 @@ st.markdown("""
         font-size: 16px;
         margin-top: 10px;
         padding: 10px;
-        word-wrap: break-word;  /* Ensure text wraps */
-        white-space: normal;  /* Allow multiple lines in the button */
+        word-wrap: break-word;
+        white-space: normal;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,15 +48,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Adjust grid layout
-cols = st.columns(4)  # Create 4 equal-width columns
-for i, item in enumerate(filtered_items):  # Loop through the items
-    with cols[i % 4]:  # Distribute items across 4 columns
-        # Display the image in the column
-        st.image(item["image"], use_column_width=True)
-        
-        # Display the name of the item as a button that will be resized based on the longest text
-        if st.button(item["name"], key=item["name"]):
-            selected_item_name = item["name"]
+for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4 (one row per loop)
+    cols = st.columns(4)  # Create exactly 4 columns per row
+    for j, item in enumerate(filtered_items[i:i+4]):  # Populate the row with up to 4 items
+        with cols[j]:
+            # Display the image in the column, ensuring a consistent size
+            st.image(item["image"], use_column_width=True)
+            
+            # Display the name of the item as a button
+            if st.button(item["name"], key=item["name"]):
+                selected_item_name = item["name"]
 
 # Show details for the selected item
 if selected_item_name:
