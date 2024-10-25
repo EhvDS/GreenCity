@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling and an absolute-positioned divider
+# Custom CSS for button styling and border-right for left_col
 st.markdown("""
     <style>
     .stButton button {
@@ -43,33 +43,38 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Divider styling using absolute positioning */
-    .divider {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background-color: white;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .container {
-        position: relative;
-        display: flex;
-        align-items: flex-start;
-        height: 100%;
+    /* Apply border-right to left column container */
+    .left-column-border {
+        border-right: 2px solid #ccc;
+        padding-right: 15px;
     }
     </style>
 """, unsafe_allow_html=True)
 
-# Use columns to display grid and details side-by-side with a vertical divider
-st.markdown('<div class="container">', unsafe_allow_html=True)
-left_col, mid_col, right_col = st.columns([3, 0.05, 2])
+# Use columns for left and right, with a border on the left column
+left_col, right_col = st.columns([3, 2])
 
 with left_col:
+    # Add a container div for the border styling
+    st.markdown('<div class="left-column-border">', unsafe_allow_html=True)
+    
     # Display header and grid info
     st.header("📋 Nature Inclusive Measures")
     st.info("Select an item from the grid to display its details on the right.")
+    st.markdown("""
+    <div style="background-color: #FFF3CD; padding: 1rem; border-radius: 5px; color: #856404; font-size: 1rem;">
+        <strong>For more information on nature inclusive measures, discover the NEST inclusive platform.</strong>
+        <br>
+        <a href="https://natuurinclusiefontwikkelen.nl/" target="_blank" style="color: #856404; text-decoration: underline;">
+            Explore actions you can take!
+        </a>
+        <br>   
+        <a href="https://nestnatuurinclusief.nl/referenties/" target="_blank" style="color: #856404; text-decoration: underline;">
+            Explore NEST projects!
+        </a>
+    </div>
+    """, unsafe_allow_html=True)
+    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
     
     # Display the grid layout of items in a 4-column grid within the left column
     selected_item_name = None
@@ -84,15 +89,18 @@ with left_col:
                 if st.button(item["name"], key=item["name"]):
                     selected_item_name = item["name"]
 
-# Insert the divider in the middle column
-with mid_col:
-    st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
+    # Close the left column container div
+    st.markdown('</div>', unsafe_allow_html=True)
 
 with right_col:
     # Show details for the selected item in the right column
     if selected_item_name:
         selected_item = next(item for item in items if item["name"] == selected_item_name)
         st.header("Selected: " + selected_item["name"])
+
+        # Points
+        st.subheader("Points")
+        st.write("Amount of nature points: " + str(selected_item["points"]))
 
         # Sections
         st.subheader("Description")
@@ -103,9 +111,15 @@ with right_col:
 
         # Guidelines
         st.subheader("Guidelines")
-        for guideline in selected_item["guidelines"]["options"]:
-            st.write(f"*{guideline['title']}*")
-            st.write(guideline["text"])
-
-# Close the container div
-st.markdown('</div>', unsafe_allow_html=True)
+        if "options" in selected_item["guidelines"] and selected_item["guidelines"]["options"]:
+            for guideline in selected_item["guidelines"]["options"]:
+                # Check if 'title' is empty and display "Empty." if so
+                title = guideline.get("title", "").strip()
+                if title == "":
+                    st.write("Empty.")
+                else:
+                    st.write(f"*{title}*")
+                # Display the text for each guideline, regardless of whether the title is empty
+                st.write(guideline["text"])
+        else:
+            st.write("Empty.")
