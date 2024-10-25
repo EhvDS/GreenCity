@@ -2,7 +2,7 @@
   "items": [
     {
       "name": "Amphibian pool and pond",
-      "image": "./images/img1.webp",
+      "image": "./data/youssef/images/img1.webp",
       "points": 2,
       "categories": "Water and banks",
       "Target group": [
@@ -44,7 +44,7 @@
     },
     {
       "name": "Preservation and planting of (fruit) trees",
-      "image": "./images/img2.webp",
+      "image": "./data/youssef/images/img2.webp",
       "points": 2,
       "categories": "Trees",
       "Target group": [
@@ -72,7 +72,7 @@
     },
     {
       "name": "Preservation or planting of trees of the first order of magnitude",
-      "image": "./images/img3.webp",
+      "image": "./data/youssef/images/img3.webp",
       "points": 5,
       "categories": "Trees",
       "Target group": [
@@ -96,7 +96,7 @@
     },
     {
       "name": "Preservation or planting of trees of the second order of magnitude",
-      "image": "./images/img4.webp",
+      "image": "./data/youssef/images/img4.webp",
       "points": 4,
       "categories": "Trees",
       "Target group": [
@@ -120,7 +120,7 @@
     },
     {
       "name": "Preservation or planting of trees of the third order of magnitude",
-      "image": "./images/img5.webp",
+      "image": "./data/youssef/images/img5.webp",
       "points": 3,
       "categories": "Trees",
       "Target group": [
@@ -145,7 +145,7 @@
     },
     {
       "name": "Flower-rich and herb-rich grassland",
-      "image": "./images/img6.webp",
+      "image": "./data/youssef/images/img6.webp",
       "points": 1,
       "categories": "Flowery and grassland",
       "Target group": [
@@ -181,7 +181,7 @@
     },
     {
       "name": "Trees",
-      "image": "./images/img7.webp",
+      "image": "./data/youssef/images/img7.webp",
       "points": 7,
       "categories": "Trees",
       "Target group": [
@@ -234,7 +234,7 @@
     },
     {
       "name": "Vacant land and bare soil",
-      "image": "./images/img8.webp",
+      "image": "./data/youssef/images/img8.webp",
       "points": 1,
       "categories": "Flowery and grassland",
       "Target group": [
@@ -253,7 +253,7 @@
     },
     {
       "name": "Brown roofs",
-      "image": "./images/img9.webp",
+      "image": "./data/youssef/images/img9.webp",
       "points": 4,
       "categories": "Roof, facade and gardens",
       "Target group": [
@@ -281,7 +281,7 @@
     },
     {
       "name": "Ecological wadi",
-      "image": "./images/img10.webp",
+      "image": "./data/youssef/images/img10.webp",
       "points": 3,
       "categories": "Water and banks",
       "Target group": [
@@ -312,7 +312,7 @@
     },
     {
       "name": "Lawn",
-      "image": "./images/img11.webp",
+      "image": "./data/youssef/images/img11.webp",
       "points": 1,
       "categories": "Other",
       "Target group": [
@@ -331,7 +331,7 @@
     },
     {
       "name": "Facade greenery and climbing greenery",
-      "image": "./images/img12.webp",
+      "image": "./data/youssef/images/img12.webp",
       "points": 2,
       "categories": "Roof, facade and gardens",
       "Target group": [
@@ -376,7 +376,7 @@
     },
     {
       "name": "Facade garden",
-      "image": "./images/img13.webp",
+      "image": "./data/youssef/images/img13.webp",
       "points": 1,
       "categories": "Roof, facade and gardens",
       "Target group": [
@@ -400,7 +400,7 @@
     },
     {
       "name": "Green roofs and roof gardens",
-      "image": "./images/img14.webp",
+      "image": "./data/youssef/images/img14.webp",
       "points": 5,
       "categories": "Roof, facade and gardens",
       "Target group": [
@@ -427,7 +427,7 @@
     },
     {
       "name": "Green garden",
-      "image": "./images/img15.webp",
+      "image": "./data/youssef/images/img15.webp",
       "points": 1,
       "categories": "Roof, facade and gardens",
       "sections": [
@@ -443,7 +443,7 @@
     },
     {
       "name": "Hedges and hedgerows of various types",
-      "image": "./images/img16.webp",
+      "image": "./data/youssef/images/img16.webp",
       "points": 2,
       "categories": "Thickets",
       "Target group": [
@@ -463,7 +463,7 @@
     },
     {
       "name": "Hedges and hedgerows",
-      "image": "./images/img17.webp",
+      "image": "./data/youssef/images/img17.webp",
       "points": 2,
       "categories": "Thickets",
       "Target group": [
@@ -500,7 +500,7 @@
     },
     {
       "name": "Insect hotel",
-      "image": "./images/img18.webp",
+      "image": "./data/youssef/images/img18.webp",
       "points": 1,
       "categories": "Other",
       "Target group": [
@@ -528,7 +528,7 @@
     },
     {
       "name": "Allotment",
-      "image": "./images/img19.webp",
+      "image": "./data/youssef/images/img19.webp",
       "points": 1,
       "categories": "Other",
       "Target group": [
@@ -548,7 +548,7 @@
     },
     {
       "name": "Natural water roof with open water and aquatic plants",
-      "image": "./images/img20.webp",
+      "image": "./data/youssef/images/img20.webp",
       "points": 3,
       "categories": "Roof, facade and gardens",
       "Target group": [
@@ -568,7 +568,7 @@
     },
     {
       "name": "Solitary trees",
-      "image": "./images/img21.webp",
+      "image": "./data/youssef/images/img21.webp",
       "points": 3,
       "categories": "Trees",
       "Target group": [
@@ -603,7 +603,7 @@
     },
     {
       "name": "Thicket",
-      "image": "./images/img22.webp",
+      "image": "./data/youssef/images/img22.webp",
       "points": 2,
       "categories": "Thickets",
       "Target group": [
@@ -631,7 +631,7 @@
     },
     {
       "name": "Branch ridge",
-      "image": "./images/img23.webp",
+      "image": "./data/youssef/images/img23.webp",
       "points": 1,
       "categories": "Other",
       "Target group": [
@@ -651,7 +651,7 @@
     },
     {
       "name": "Perennials",
-      "image": "./images/img24.webp",
+      "image": "./data/youssef/images/img24.webp",
       "points": 3,
       "categories": "Thickets",
       "Target group": [
@@ -671,7 +671,7 @@
     },
     {
       "name": "Habitat and nest boxes",
-      "image": "./images/img25.webp",
+      "image": "./data/youssef/images/img25.webp",
       "points": 2,
       "categories": "Roof, facade and gardens",
       "Target group": [
@@ -699,7 +699,7 @@
     },
     {
       "name": "Water and nature-friendly banks",
-      "image": "./images/img26.webp",
+      "image": "./data/youssef/images/img26.webp",
       "points": 2,
       "categories": "Water and banks",
       "Target group": [
@@ -723,7 +723,7 @@
     },
     {
       "name": "Zoomvegetatie",
-      "image": "/mnt/data/img27.webp",
+      "image": "./data/youssef/images/img27.webp",
       "points": 3,
       "categories": "Thickets",
       "Target group": [
