@@ -85,7 +85,7 @@ with left_col:
 with mid_col:
     st.markdown(
         """
-        <div style="height: 100%; width: 1px; background-color: #fff; margin: 0 auto;"></div>
+        <div style="height: 100vh; width: 1px; background-color: #fff; margin: 0 auto;"></div>
         """, 
         unsafe_allow_html=True
     )
