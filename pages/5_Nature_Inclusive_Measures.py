@@ -111,7 +111,7 @@ with right_col:
         st.subheader("Guidelines")
         for guideline in selected_item["guidelines"]["options"]:
             # Check if 'title' is an empty string
-            if guideline['title'] == "":
+            if guideline['header'] == "":
                 st.write("Empty.")
             else:
                 st.write(f"*{guideline['title']}*")
