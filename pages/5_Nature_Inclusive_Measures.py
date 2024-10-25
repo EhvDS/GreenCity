@@ -23,9 +23,11 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))  # Safely handle missing "Target group" key
 ]
 
-# Initialize session state to track the selected item
+# Initialize session state to track the selected item and click state
 if "selected_item" not in st.session_state:
     st.session_state.selected_item = None
+if "item_clicked" not in st.session_state:
+    st.session_state.item_clicked = False
 
 # Display header and information section
 st.header("📋 Nature Inclusive Measures")
@@ -48,7 +50,7 @@ st.markdown("""
 st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
 
 # Display the selected item details above the grid if an item is selected
-if st.session_state.selected_item:
+if st.session_state.item_clicked:
     selected_item = st.session_state.selected_item
     st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
     st.header("Selected: " + selected_item["name"])
@@ -74,7 +76,8 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
         with cols[j]:
             # Display the image in the column, ensuring a consistent size
             st.image(item["image"], use_column_width=True)
-
+            
             # Display the name of the item as a button
             if st.button(item["name"], key=item["name"]):
                 st.session_state.selected_item = item  # Store selected item in session state
+                st.session_state.item_clicked = True  # Mark that an item was clicked
