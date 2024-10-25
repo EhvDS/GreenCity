@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling and flex container with border
+# Custom CSS for button styling
 st.markdown("""
     <style>
     .stButton button {
@@ -43,29 +43,14 @@ st.markdown("""
         display: flex;
         flex-direction: column;
     }
-    /* Flex container with border between left and right columns */
-    .flex-container {
-        display: flex;
-    }
-    .left-column {
-        border-right: 2px solid #ccc;
-        padding-right: 15px;
-        flex: 3;
-    }
-    .right-column {
-        flex: 2;
-        padding-left: 15px;
-    }
     </style>
 """, unsafe_allow_html=True)
 
-# Create a flex container to hold left and right columns with a border between them
-st.markdown('<div class="flex-container">', unsafe_allow_html=True)
+# Use columns to display grid and details side-by-side with a vertical divider
+left_col, mid_col, right_col = st.columns([3, 0.1, 2])  # mid_col is a narrow column for the border
 
-# Left column with border
-with st.container():
-    st.markdown('<div class="left-column">', unsafe_allow_html=True)
-    
+with left_col:
+    # Display header and grid info
     st.header("📋 Nature Inclusive Measures")
     st.info("Select an item from the grid to display its details on the right.")
     st.markdown("""
@@ -96,12 +81,17 @@ with st.container():
                 if st.button(item["name"], key=item["name"]):
                     selected_item_name = item["name"]
 
-    st.markdown('</div>', unsafe_allow_html=True)  # Close the left column div
+# Add a vertical line between the columns
+with mid_col:
+    st.markdown(
+        """
+        <div style="height: 100%; width: 1px; background-color: #ccc; margin: 0 auto;"></div>
+        """, 
+        unsafe_allow_html=True
+    )
 
-# Right column
-with st.container():
-    st.markdown('<div class="right-column">', unsafe_allow_html=True)
-    
+with right_col:
+    # Show details for the selected item in the right column
     if selected_item_name:
         selected_item = next(item for item in items if item["name"] == selected_item_name)
         st.header("Selected: " + selected_item["name"])
@@ -120,6 +110,8 @@ with st.container():
         # Guidelines
         st.subheader("Guidelines")
         if "options" in selected_item["guidelines"] and selected_item["guidelines"]["options"]:
+            st.subheader("Guidelines")
+            
             for guideline in selected_item["guidelines"]["options"]:
                 # Check if 'title' is empty and display "Empty." if so
                 title = guideline.get("title", "").strip()
@@ -127,10 +119,9 @@ with st.container():
                     st.write("Empty.")
                 else:
                     st.write(f"*{title}*")
-                st.write(guideline["text"])  # Display the text for each guideline, regardless of whether the title is empty
+                
+                # Display the text for each guideline, regardless of whether the title is empty
+                st.write(guideline["text"])
         else:
+            # If no guidelines options exist, show "Empty." directly without a header
             st.write("Empty.")
-    
-    st.markdown('</div>', unsafe_allow_html=True)  # Close the right column div
-
-st.markdown('</div>', unsafe_allow_html=True)  # Close the flex container div
