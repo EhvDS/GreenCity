@@ -21,17 +21,56 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item["Target group"])
 ]
 
-# Display the items in a 4-column grid view with more spacing
+# Add custom CSS for the grid layout and spacing
+st.markdown(
+    """
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+        gap: 20px;  /* Spacing between grid items */
+    }
+    .grid-item {
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .grid-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# Create a grid layout with HTML and CSS
+html = "<div class='grid-container'>"
+for item in filtered_items:
+    html += f"""
+    <div class='grid-item'>
+        <img src='{item['image']}' alt='{item['name']}'>
+        <h3>{item['name']}</h3>
+        <form action='#' method='POST'>
+            <input type='submit' name='select_{item['name']}' value='Select' style='width: 100%; padding: 10px;'>
+        </form>
+    </div>
+    """
+html += "</div>"
+
+# Render the grid with Streamlit
+st.markdown(html, unsafe_allow_html=True)
+
+# Check which item was selected
 selected_item_name = None
-cols = st.columns(4)  # Four columns for better spacing
-for i, item in enumerate(filtered_items):
-    with cols[i % 4]:
-        # Display the image
-        st.image(item["image"], use_column_width=True)
-        
-        # Display the name of the item in bold, center aligned
-        if st.button(item["name"], key=item["name"]):
-            selected_item_name = item["name"]
+for item in filtered_items:
+    if st.session_state.get(f"select_{item['name']}"):
+        selected_item_name = item["name"]
 
 # Show details for the selected item
 if selected_item_name:
