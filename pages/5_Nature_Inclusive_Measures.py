@@ -23,29 +23,38 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Display header and information section
-st.header("📋 Nature Inclusive Measures")
-st.info("Select an item from the grid to display its details on the right.")
+# Custom CSS for button styling
 st.markdown("""
-    <div style="background-color: #FFF3CD; padding: 1rem; border-radius: 5px; color: #856404; font-size: 1rem;">
-        <strong>For more information on nature inclusive measures, discover the NEST inclusive platform.</strong>
-        <br>
-        <a href="https://natuurinclusiefontwikkelen.nl/" target="_blank" style="color: #856404; text-decoration: underline;">
-            Explore actions you can take!
-        </a>
-        <br>   
-        <a href="https://nestnatuurinclusief.nl/referenties/" target="_blank" style="color: #856404; text-decoration: underline;">
-            Explore NEST projects!
-        </a>
-    </div>
+    <style>
+    .stButton button {
+        width: 100%;
+        height: auto;
+        min-height: 60px;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 10px;
+        word-wrap: break-word;
+        white-space: normal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .stButton {
+        display: flex;
+        flex-direction: column;
+    }
+    </style>
 """, unsafe_allow_html=True)
-st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
 
 # Use columns to display grid and details side-by-side
 left_col, right_col = st.columns([3, 2])  # Adjust the width ratio as needed
 
 with left_col:
-    # Display the items in a 4-column grid within the left column
+    # Display header and grid info
+    st.header("📋 Nature Inclusive Measures")
+    st.info("Select an item from the grid to display its details on the right.")
+    
+    # Display the grid layout of items in a 4-column grid within the left column
     selected_item_name = None
     for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 4 (one row per loop)
         cols = st.columns(4)  # Create exactly 4 columns per row
