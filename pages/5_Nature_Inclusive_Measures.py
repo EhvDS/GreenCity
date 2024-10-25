@@ -21,14 +21,16 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))  # Safely handle missing "Target group" key
 ]
 
-# Add JavaScript code to scroll to the selected section
+# JavaScript function to scroll with a delay
 scroll_script = """
     <script>
     function scrollToSection() {
-        var element = document.getElementById("details_section");
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+        setTimeout(function() {
+            var element = document.getElementById("details_section");
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 2500);  // Delay of 2500ms to ensure content has loaded
     }
     </script>
 """
@@ -75,7 +77,7 @@ for i in range(0, len(filtered_items), 4):  # Loop through items with a step of 
             # Display the name of the item as a button
             if st.button(item["name"], key=item["name"]):
                 selected_item_name = item["name"]
-                # Trigger the JavaScript scroll when an item is selected
+                # Trigger the JavaScript scroll when an item is selected, with delay
                 st.markdown("<script>scrollToSection();</script>", unsafe_allow_html=True)
 
 # Show details for the selected item
