@@ -23,7 +23,7 @@ filtered_items = [
        (selected_target_group == "All" or selected_target_group in item.get("Target group", []))
 ]
 
-# Custom CSS for button styling
+# Custom CSS for button styling and border
 st.markdown("""
     <style>
     .stButton button {
@@ -42,6 +42,11 @@ st.markdown("""
     .stButton {
         display: flex;
         flex-direction: column;
+    }
+    /* Add a right border to the left column */
+    div[data-testid="column"] > div:first-child {
+        border-right: 2px solid #ccc;
+        padding-right: 15px;
     }
     </style>
 """, unsafe_allow_html=True)
