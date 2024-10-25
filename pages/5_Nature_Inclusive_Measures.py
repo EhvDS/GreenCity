@@ -69,17 +69,17 @@ if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
     st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
     
-    st.header("Selected: " + selected_item["name"])
+    # st.header("Selected: " + selected_item["name"])
 
-    # Sections
-    st.subheader("Description")
-    for section in selected_item["sections"]:
-        st.write(f"**{section['header']}**")
-        st.write(section["text"])
+    # # Sections
+    # st.subheader("Description")
+    # for section in selected_item["sections"]:
+    #     st.write(f"**{section['header']}**")
+    #     st.write(section["text"])
 
-    # Guidelines
-    st.markdown("<br/><br/>", unsafe_allow_html=True)
-    st.subheader("Guidelines")
-    for guideline in selected_item["guidelines"]["options"]:
-        st.write(f"**{guideline['title']}**")
-        st.write(guideline["text"])
+    # # Guidelines
+    # st.markdown("<br/><br/>", unsafe_allow_html=True)
+    # st.subheader("Guidelines")
+    # for guideline in selected_item["guidelines"]["options"]:
+    #     st.write(f"**{guideline['title']}**")
+    #     st.write(guideline["text"])
