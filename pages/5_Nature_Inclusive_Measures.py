@@ -24,25 +24,19 @@ filtered_items = [
 # Display the items in a 4-column grid view with more spacing
 selected_item_name = None
 
-# Define CSS to apply fixed width/height to buttons and handle text overflow
+# Define CSS to manage hr display and remove any extra borders
 st.markdown("""
     <style>
-    .stButton button {
-        width: 100%;
-        height: auto;
-        min-height: 60px;
-        font-size: 16px;
-        margin-top: 10px;
-        padding: 10px;
-        word-wrap: break-word;
-        white-space: normal;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    /* Only display intended hr elements, no other lines */
+    hr {
+        border: 0;
+        border-top: 1px solid gray;
+        margin: 20px 0; /* Optional spacing adjustment */
     }
-    .stButton {
-        display: flex;
-        flex-direction: column;
+    /* Remove any potential unwanted borders/shadows from Streamlit components */
+    .element-container {
+        border: none !important;
+        box-shadow: none !important;
     }
     </style>
 """, unsafe_allow_html=True)
@@ -64,17 +58,17 @@ if selected_item_name:
     selected_item = next(item for item in items if item["name"] == selected_item_name)
     st.header(selected_item["name"])
 
-    # Sections
+    # Sections - Keeping the <hr> where necessary
     st.subheader("Description")
-    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
+    st.markdown("<hr>", unsafe_allow_html=True)  # Display the hr for separation
     for section in selected_item["sections"]:
         st.write(f"**{section['header']}**")
         st.write(section["text"])
 
-    # Guidelines
+    # Guidelines - Another intentional hr
     st.markdown("<br/><br/>", unsafe_allow_html=True)
     st.subheader("Guidelines")
-    st.markdown("<hr style='border:1px solid gray;'>", unsafe_allow_html=True)
+    st.markdown("<hr>", unsafe_allow_html=True)  # Display the hr for separation
     for guideline in selected_item["guidelines"]["options"]:
         st.write(f"**{guideline['title']}**")
         st.write(guideline["text"])
