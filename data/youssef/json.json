@@ -1,0 +1,773 @@
+{
+  "items": [
+    {
+      "name": "Amphibian pool and pond",
+      "image": "./data/youssef/images/img1.webp",
+      "points": 2,
+      "categories": "Water and banks",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "Pools",
+          "text": "Many species, such as the tree frog, moor frog, crested newt and insects benefit from a natural pond due to the specific combination of water and greenery, and can reproduce in the water. The stagnant water is also a drinking place for birds.\nPonds are isolated (not connected to open water) bodies of water that in principle contain water all year round. The pond should be natural and must therefore be below the groundwater level. A sunny location is important.\nDue to their isolated location, ponds remain free of fish and therefore form a safe breeding ground for frogs, newts and dragonflies. In addition, they are a habitat for all kinds of water and bankside plants. Give the pond a whimsical shape. A whimsical bank line provides a longer boundary between land and water, which is beneficial for plants and animals.\nThe water depth must be at least 50 cm and different depths provide the necessary variation. A deeper point of 80-120 cm ensures that the pond does not completely freeze over in the winter.\nThe shallower and wider the pond, the more species diversity is possible. The slope of the northern bank should be made as shallow as possible (preferably 1:8 or 1:10) and the deepest point should be 50 cm below the lowest groundwater level.\nThe planting in the pond can have a purifying effect when, for example, bulrush or reed is planted. This therefore has a positive effect on the water quality. Furthermore, different types of plants can gradually merge into each other. From water plants, to plants for amphibians, to flower-rich grassland on the banks. Make sure that the soil is not too rich to prevent a monoculture of reed."
+
+        },
+        {
+          "header": "Pond",
+          "text": "A pond is smaller than a pool and is often constructed in gardens.\nDo not release fish into the pool or pond!\nPlease note! These measures do not refer to a pond with an artificial water-retaining layer (such as concrete or pond liner).\nTip: also pay attention to the surrounding elements next to a natural bank: for example, it is not desirable to create an easily accessible bank near a busy road."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Planting",
+            "text": "Aquatic plants are useful. Especially oxygen plants (submerged aquatic plants) are important, because they largely determine the biological balance and water quality. They provide oxygen, offer shelter and form an ideal place for salamanders (and dragonflies) to lay eggs."
+          },
+          {
+            "title": "Management and maintenance",
+            "text": "Ponds require maintenance to prevent them from becoming overgrown with reeds or other aquatic plants or drying out."
+          },
+          {
+            "title": "Dimensions",
+            "text": "With a size of approximately 50 m2, a pond can already be functional for various species. Of course, a larger size of the pond means that it becomes more interesting for various animal and plant species. The deepest water depth must be at least 50 cm."
+          },
+          {
+            "title": "Increased natural value",
+            "text": "A gentle slope of the pond provides more natural value, because insects and amphibians can warm up there. Provide a jagged bank line and different water depths. The presence of scrub and/or herb-rich grassland in the immediate vicinity of the pond provides food and cover for animal species that depend on the pond, and therefore has additional natural value."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Preservation and planting of (fruit) trees",
+      "image": "./data/youssef/images/img2.webp",
+      "points": 2,
+      "categories": "Trees",
+      "Target group": [
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Fruit trees can play an important role in the food system of a neighbourhood. In the spring they are in bloom and provide insects with nectar early in the year (April-May). In the summer/autumn they are full of fruit, which attracts birds and small mammals. When the fruit is at its ripest, butterflies are also attracted to the sap. In order for fruit trees to make as much of an ecological contribution as possible, it is important that some of the fruit remains on the ground. This way, ground-based mammals can get to it and the fruit can feed crawling insects. Older fruit trees have a greater ecological value than young ones. Therefore, try to retain fruit trees if they are present in the plan.\nIn addition, fruit trees can also contribute greatly to a sense of community and form a pleasant meeting place for residents in the summer."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Growing conditions",
+            "text": "When planting fruit trees, consider the location, ensure that the soil conditions are correct and that there is sufficient growth space above and below ground."
+          },
+          {
+            "title": "Ecological contribution",
+            "text": "Choose a location where the fruit can also remain on the ground."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Preservation or planting of trees of the first order of magnitude",
+      "image": "./data/youssef/images/img3.webp",
+      "points": 5,
+      "categories": "Trees",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "First order trees grow taller than 12 metres. These trees require a great deal of growing space, both above and below ground. When planting, consider the location and ensure that the soil conditions are correct.\nWhen these trees are planted properly, they can grow incredibly large and are of great value to animal species.\nNative trees that you can think of are Norway maple, beech, common walnut, sweet gum, summer oak, common willow, winter lime, silver lime, and fluttering elm."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Growing conditions",
+            "text": "When placing, consider the location and ensure that the soil conditions are correct and that there is sufficient growth space above and below ground."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Preservation or planting of trees of the second order of magnitude",
+      "image": "./data/youssef/images/img4.webp",
+      "points": 4,
+      "categories": "Trees",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Second order trees grow to 6 to 12 m tall. These trees can be planted in most places, they offer a lot of habitat for animal species. When planting, consider the location and make sure the soil conditions are correct and there is sufficient growth space above and below ground.\nTrees that you can think of are the silver birch, common hornbeam, tree hazel, white mulberry and common rowan."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Growing conditions",
+            "text": "When placing, consider the location and ensure that the soil conditions are correct and that there is sufficient growing space above and below ground."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Preservation or planting of trees of the third order of magnitude",
+      "image": "./data/youssef/images/img5.webp",
+      "points": 3,
+      "categories": "Trees",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Trees of third order size remain smaller than 6 m. These trees are suitable for small gardens or in places where there is little space. When placing them, consider the location and ensure that the soil conditions are correct and that there is sufficient growth space above and below ground.\nTrees that you can think of are apple tree, plum and pear."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Growing conditions",
+            "text": "When placing, consider the location and ensure that the soil conditions are correct and that there is sufficient growing space above and below ground."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Flower-rich and herb-rich grassland",
+      "image": "./data/youssef/images/img6.webp",
+      "points": 1,
+      "categories": "Flowery and grassland",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Herb-rich grassland consists of tall, native herbs (approximately 1 metre or higher), or native brambles that are exposed to the sun for most of the day. The herbs stand alone, or along a thicket (mantle border). This can be either linear or flat. A flat herb field concerns corners, or even temporary nature, such as undeveloped plots on industrial estates or other construction sites. These types of plots can be sown with a native herb mixture or the vegetation can arise spontaneously because the wind or animals bring seeds to the plan area.\nIn addition to the fact that an abundance of herbs and flowers makes the environment more beautiful, it is also attractive to many different species, which strengthens biodiversity. A colour palette of flowers is attractive to people, but also attracts many bees and butterflies, so that they get through the summer well. Many birds, small mammals and amphibians then feast on these insects. In addition, it is safe to forage among the flowers. Later in the season, the birds can feast on the seeds.\nCreate a border along the south and west sides of rows of trees, windbreaks, wild hedges, hedgerows and forests: this is where the most sunshine falls. This leads to a greater diversity of species of plants, butterflies and other insects."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Planting",
+            "text": "In open ground, native species mix suitable for local animal species. Sow grasses with annual herbaceous species and perennial flowering vegetation aimed at bees and butterflies."
+          },
+          {
+            "title": "Management and maintenance",
+            "text": "Ecologically managed and mowed in phases."
+          },
+          {
+            "title": "Dimensions",
+            "text": "A surface of at least 25m2 and 3m wide. For large-scale projects preferably at least 100 m2 ground surface and 5m wide."
+          },
+          {
+            "title": "Increase in natural value",
+            "text": "The natural value of herb-rich grassland increases with the size, the herb richness and the presence of other adjacent biotopes such as a copse, thicket or a watercourse."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trees",
+      "image": "./data/youssef/images/img7.webp",
+      "points": 7,
+      "categories": "Trees",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Trees are an essential asset in urban areas, provide shelter for various species and provide cooling and character in the streets. They come in various shapes and sizes, ranging from native species to trees that are suitable for moist or dry soil. When choosing a tree, it is crucial to take into account the location: Is the soil dry or wet? Is there sufficient space underground? And do I need a tree that provides cooling or that produces a lot of nectar? The way in which trees are placed determines their role in the ecosystem. Below are some structures in which trees can be placed."
+        },
+        {
+          "header": "Rows of trees",
+          "text": "A row of trees creates connections between different areas. For nocturnal animals, it is important that there is sufficient shade and darkness. Native trees, which provide a lot of food, are essential for the presence of (small) birds."
+        },
+        {
+          "header": "Groves",
+          "text": "A grove consists of several trees with shrubs underneath or around them. It is important that these groves contain native species, because they are more attractive to insects and other animals than exotic species. Bushes are crucial for breeding birds and small mammals, such as mice, hedgehogs and mustelids. In order to offer breeding birds such as the blackbird and the wood pigeon a safe environment, a minimum area of ​​225 m² is required, with a preference for a larger size of at least 1 hectare. In addition, a minimum width of 15 meters is necessary for sufficient cover. The natural value of a bush can further increase through the presence of old trees, tree hollows and a gradual transition to the surrounding environment, such as mantle fringe vegetation."
+        },
+        {
+          "header": "Solitary trees",
+          "text": "Freestanding trees or trees in small groups offer shelter for house sparrows and function as a lookout point for birds of prey when they are high enough. These solitary trees contribute to the diversity and ecological value of the urban environment."
+        },
+        {
+          "header": "Different tree orders",
+          "text": "First-size trees grow higher than 12 meters (for example oak, beech and lime).\nSecond-size trees grow 6 to 12 meters high (for example rowan, pear and apple).\nThird size trees remain smaller than 6 metres (for example quince, medlar and crab apples)."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Native species",
+            "text": "If you want to strengthen local biodiversity, choose trees that are native to the region, so that you strengthen local biodiversity."
+          },
+          {
+            "title": "Provide variety",
+            "text": "Use a mix of tree species to create a diverse ecosystem that supports different animal species."
+          },
+          {
+            "title": "Create connections",
+            "text": "Place rows of trees to connect areas and thus facilitate animal species in their movements."
+          },
+          {
+            "title": "Design suitable groves",
+            "text": "Ensure that groves have sufficient surface area and structure to provide a safe habitat for breeding birds and small mammals."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Vacant land and bare soil",
+      "image": "./data/youssef/images/img8.webp",
+      "points": 1,
+      "categories": "Flowery and grassland",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Wastelands play a crucial role in urban nature. These areas are often a form of temporary nature that can continue without human intervention. Due to their bare and rapidly developing nature, they offer opportunities for pioneer vegetation and animal species that are dependent on dynamic conditions. This makes them a valuable situation that is often lacking.\nEspecially when a site remains wasteland for a long time, it is important to take protected species and possible legal risks into account when setting up temporary nature on wastelands. Tall shrubs and trees can change the ecological character, so timely advice from an ecologist is desirable."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Brown roofs",
+      "image": "./data/youssef/images/img9.webp",
+      "points": 4,
+      "categories": "Roof, facade and gardens",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Brown roofs have an ecological and water-buffering value. Brown roofs are mainly covered with sand and stone, such as recycled rubble. Birds that originally breed on sandy terrain use brown roofs as a nesting site.\nAnimal species that benefit from a brown roof include the oystercatcher, plover, tern, black redstart, and various insects."
+        },
+        {
+          "header": "Variation: Shell island on a flat roof",
+          "text": "A shell island (a box with shell grit) can also be placed on the flat roof as a breeding location for the oystercatcher and the little ringed plover. The roof on which the shell box is placed must have a surface area of ​​at least 150 m2. The thickness of the layer must be sufficient to create a hole for the eggs. Also ensure that the rainwater drains are fitted with mesh, so that young oystercatchers cannot end up in the drainpipes."
+        },
+        {
+          "header": "Water features on roofs",
+          "text": "In combination with water plants and a helophyte filter, a high-quality water feature can also be created on the roof in which fish can also be found. They help to eat mosquito larvae and algae and thus keep the water clean.\nA water roof is good for damselflies and dragonflies, butterflies, fish, birds and bats."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Ecological wadi",
+      "image": "./data/youssef/images/img10.webp",
+      "points": 3,
+      "categories": "Water and banks",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "A wadi (‘water permeability through infiltration’) is a planted ditch or canal with a water-permeable bottom.\nEcological wadis are naturally designed and do not only consist of grass. Native and diverse, tall plants strengthen the ecological infrastructure, because the wadis can serve as an ecological connection zone or stepping stone. They also ensure more biodiversity. Hedgehogs and shrews, among others, find cover and food in wadis."
+        },
+        {
+          "header": "Wadi system",
+          "text": "In a ‘wadi system’, the water from the roofs and roads does not flow into the sewer, but via the above-ground gutters and/or ditches into the wadi and then to the groundwater in the soil."
+        },
+        {
+          "header": "Components of a wadi",
+          "text": "It is desirable to use as much dead wood, loose stones and other natural materials as possible that provide shelter for insects, amphibians and small mammals."
+        },
+        {
+          "header": "Tip: combine",
+          "text": "Combine a wadi with a natural playground."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Lawn",
+      "image": "./data/youssef/images/img11.webp",
+      "points": 1,
+      "categories": "Other",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Apart from a few animal species such as the oystercatcher and seagull, there are few animal and plant species that feel comfortable in an environment with mainly lawns, except for humans of course. It is therefore wise to create lawns in well-considered places where local residents can come together to play, picnic or do sports.\nThere are a few measures you can take to improve the ecological quality of lawns. Place a few groups of trees with an underlayer of shrubs or herbs. Choose to place shrubs at the edges of the lawn or to manage part of it ecologically so that herb-rich grassland can develop."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Facade greenery and climbing greenery",
+      "image": "./data/youssef/images/img12.webp",
+      "points": 2,
+      "categories": "Roof, facade and gardens",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "An ideal facade garden consists of a diverse range. This includes grasses, perennials, shrubs, tree formers where possible and bulbs for early spring flowering.\nThe final choice of the type of planting depends on the orientation of the facade to the sun, partial shade or shade.\nClimbing plants in the form of ivy, wild vine or real varied green walls are decisive for the green character of a neighbourhood. In addition, birds find their nesting place here.\nFurthermore, butterfly bushes, musk mallow, hollyhock, lavender, wild marjoram, buckthorn, ivy and holly are important shrub species that can contribute to biodiversity."
+        },
+        {
+          "header": "Winders, creepers",
+          "text": "Winders wind themselves, as the name suggests, around an object. For this they therefore require a tool with which they can work their way up. This construction can be separate from the facade so that it does not touch it. Due to the upward winding movement, the plant benefits most from vertically rising linear elements such as: steel wire, tubes, bamboo, etc. Winders do not affect the facade, they only grab onto the climbing structure."
+        },
+        {
+          "header": "Tendrils, leaf tendrils, branch tendrils",
+          "text": "Tendrils shoot out with long shoots. When these shoots encounter an object, they develop a small tendril that wraps itself around this object. They need aids for this. Preferably a horizontal linear object, such as a steel wire. The height of this group of plants can easily be regulated by providing climbing facilities up to the desired height. Tendrils do not affect the facade, they only grab onto the climbing structure."
+        },
+        {
+          "header": "Enterers, support climbers, espalier greenery",
+          "text": "Enterers are plants that lean/support against a structure. For this they prefer horizontal linear climbing facilities, although they can also grow several meters upwards against horizontal climbing facilities. The construction must be stronger than with winders or tendrils, because - in addition to the weight they exert on the construction - it can often push the construction apart or loose from the wall. This type of climbing plant often requires more guidance in growing upwards by guiding the branches behind the climbing device."
+        },
+        {
+          "header": "Clinging, self-clinging",
+          "text": "Self-clinging types do not require climbing aids and are therefore cheap to install. The plants use suction cups or adhesive roots that attach themselves to a vertical surface. They can attach themselves best to rough surfaces such as brick walls and wood, although smooth concrete walls are also suitable. The surface in question should be free of cracks and crevices, as clinging plants otherwise find this an ideal attachment point in which to grow."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Dimensions of a green facade",
+            "text": "The green facade should be at least 2 meters high, but 3 meters is preferred. Preferably, the plants on a green facade are ground-bound with a planting hole of at least 30 cm x 45 cm ground surface. In a wider garden, more species can grow and there is more cover for species such as the hedgehog."
+          },
+          {
+            "title": "Self-sufficient plants",
+            "text": "Plants should preferably be self-sufficient in terms of water and nutrition. Think of plants such as ivy, clematis, honeysuckle or wild hops. A green facade can also be made self-sufficient by means of an irrigation system from the gutters or by growing the plants from pots or planters at the bottom of the facade."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Facade garden",
+      "image": "./data/youssef/images/img13.webp",
+      "points": 1,
+      "categories": "Roof, facade and gardens",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "A facade garden is a small garden against the facade of a building. Among other things, native herbs or climbing plants can be placed in it. Facade gardens are a very suitable way to add plants to densely built-up urban areas. They can easily be incorporated into the existing urban structure by removing paving stones and replacing them with plants. In addition to a green street, this also provides cooling and extra water infiltration. As long as they are wide enough, facade gardens can play an important role in ecological connections in the city.\nIf a facade has no or few windows, a facade garden can be provided with climbing plants. These cover walls and fences and contribute to a calming and stress-reducing environment and the beautification of the streetscape."
+        },
+        {
+          "header": "Green facades as a habitat for animals",
+          "text": "This is often ideal for animals, as the facades offer food, shelter and nesting opportunities for birds, butterflies and wild bees. Many birds like to hide in climbing plants or shrubs. By placing green facades directly in the open ground, ground-based mammals can also find their place there. In addition, a native green facade also offers a suitable foraging spot for insects. A very effective plant for a green facade is ivy. This is one of the last flowering native plants in the Netherlands and provides bees and butterflies with the necessary energy to get through the winter. Other suitable plants are wild vine, firethorn, clematis and wild honeysuckle."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Green roofs and roof gardens",
+      "image": "./data/youssef/images/img14.webp",
+      "points": 5,
+      "categories": "Roof, facade and gardens",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Green roofs are roofs that are equipped with plants. In addition to their ecological value, they also have a water-buffering, climate-mitigating and insulating value. Moreover, when they are visible and/or accessible, they enrich the urban landscape and have a recreational function. In addition, they provide an excellent soil for all kinds of animals and plants and are therefore also very valuable for biodiversity. Green roofs are especially good for birds, butterflies, bees and bats.\nThere are various options for a green roof: an extensive roof, an intensive roof, and a combination with water collection. An extensive roof consists of a thin soil layer of approximately five to seven centimetres and moss or sedum vegetation, possibly supplemented with herbs and grasses. By varying the soil thickness, microclimates can be created. This promotes biodiversity even further.\nAn intensive roof has the highest diversity in all respects. Grasses, herbs, shrubs and even trees grow on a thick substrate layer of between 80 and 120 centimetres. An intensive roof is just like a real garden, but on top of a building."
+        },
+        {
+          "header": "Sufficient water",
+          "text": "It is important for a well-functioning and growing planting on the roofs and along the facades that the plants are assured of sufficient water. Where possible, this is done by buffering rainwater on or in the building, which prevents the plants from dying during dry periods. It is especially important during hot and dry summers that the water supply is well-organized. However, good drainage is also important, otherwise the plants will rot during wet periods."
+        },
+        {
+          "header": "Buffering rainwater",
+          "text": "Green roofs are also excellent for collecting rainwater. The collected rainwater can be used at a later stage to water the roof garden, for example. In addition, solar panels yield better on a green roof, because they perform better."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Green garden",
+      "image": "./data/youssef/images/img15.webp",
+      "points": 1,
+      "categories": "Roof, facade and gardens",
+      "sections": [
+        {
+          "header": "",
+          "text": "Green gardens can provide a lot of valuable green space in cities, which offers important habitat for various species. Encouraging residents to create green gardens plays an important role in this.\nAn effective measure is to deliver ready-to-plant gardens, where the garden is already provided with suitable garden soil, so that residents can get started right away. Residents also often lack knowledge about the possibilities of a green garden. Initiatives such as plant markets, giving plants as a gift upon completion, or providing information about the benefits of a green garden (such as for health, cooling and biodiversity) can help with this. In addition, it can help to break through misconceptions, such as the idea that a tiled garden requires less maintenance. Furthermore, inspiration can be provided by presenting example gardens such as a low-maintenance garden, a child-friendly garden, or a biodiversity hotspot."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Hedges and hedgerows of various types",
+      "image": "./data/youssef/images/img16.webp",
+      "points": 2,
+      "categories": "Thickets",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Hedgerows and hedgerows are important structures in the city. They create separations between private and public areas and thus connect green structures. Hedgerows and hedgerows offer shelter for animal species and possibly food. It is therefore the nature-inclusive version of a fence. Birds find shelter there, they make nests in them and the berries in the bushes offer food, as do the insects that are attracted to them. House sparrows like hedgerows because they offer the possibility to retreat when danger threatens. Small mammals such as hedgehogs use hedgerows as a connecting green structure to move around."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Hedges and hedgerows",
+      "image": "./data/youssef/images/img17.webp",
+      "points": 2,
+      "categories": "Thickets",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "Hedges",
+          "text": "A hedge is straight, often consists of beech, hawthorn, field maple or hornbeam and is maintained annually."
+        },
+        {
+          "header": "Hedgerows",
+          "text": "Hedgerows are linear landscape elements. A hedge is higher and wider than a hedge, mainly consists of hawthorn, blackthorn, rose or willow and is maintained less often."
+        },
+        {
+          "header": "Natural property boundaries",
+          "text": "Hedgerows and hedges are natural property boundaries and offer a lot of ecological value compared to fences or a gate. They are excellent hiding places for birds and small mammals such as the hedgehog use it as a green structure to get from one area to another."
+        }
+      ],
+      "guidelines": {
+        "header": "Planting",
+        "options": [
+          {
+            "title": "Beplanting",
+            "text": "In open ground, native species mix suitable for local animal species. A Zeeland hedge consists of hawthorn, blackthorn and field maple, for example. Additions such as elder and blackberry are also valuable, because these species bear berries which provide food for birds and insects."
+          },
+          {
+            "title": "Dimensions and natural value",
+            "text": "A hedge is at least 80cm high and 50cm wide. Hedges are wider and higher. These provide more safety and are therefore ecologically more valuable."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Insect hotel",
+      "image": "./data/youssef/images/img18.webp",
+      "points": 1,
+      "categories": "Other",
+      "Target group": [
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Insect hotels offer shelter for many types of insects. The different compartments in the hotel offer suitable conditions for the species to hide, reproduce or raise their young. Many insects like to go to small sheltered corners such as piles of branches, reeds, roof tiles and pine cones. An insect hotel offers a tidy alternative to these materials that residents normally find messy. For bees it is important to place the hotel in full sun, for other insects this is less important. Make sure that there is a suitable habitat for these insects in the immediate vicinity, including nectar-rich plants and dense shrubs."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Orientation",
+            "text": "Place insect hotels for bees in the sun."
+          },
+          {
+            "title": "Location",
+            "text": "Make sure the hotels are sheltered from rain and wind."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Allotment",
+      "image": "./data/youssef/images/img19.webp",
+      "points": 1,
+      "categories": "Other",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Vegetable gardens bring residents and nature closer together and strengthen social cohesion in residential areas. A vegetable garden requires care and attention, so creating a vegetable garden together can promote the involvement of a neighbourhood. By actively involving residents in the design and maintenance, not only a green oasis is created, but also a place where people work together and enjoy their own grown vegetables and herbs. This increases awareness of nature and sustainability, while beautifying the neighbourhood and forming a source of local biodiversity."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Natural water roof with open water and aquatic plants",
+      "image": "./data/youssef/images/img20.webp",
+      "points": 3,
+      "categories": "Roof, facade and gardens",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "A natural water roof with open water and aquatic plants offers numerous benefits to nature and the environment. It promotes biodiversity by creating a habitat for different types of flora and fauna, including fish, birds and insects, which contributes to a richer ecosystem. In addition, it improves water quality; aquatic plants filter pollutants, reduce algae blooms and increase oxygen levels, which is essential for aquatic organisms.\nA water roof also helps regulate the temperature and humidity in the environment, which is beneficial for local flora and fauna. This helps maintain biodiversity. In addition, a natural water roof supports stormwater management, where rainwater is collected and slowly released, which reduces the risk of flooding and erosion in surrounding areas.\nIt also has educational value, as it provides opportunities to learn about ecosystem services, biodiversity and the importance of water conservation, which increases environmental awareness. A natural water roof also adds beauty to the landscape; the vibrant colours of aquatic plants and the reflections in the water contribute to the well-being of people in the area."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Solitary trees",
+      "image": "./data/youssef/images/img21.webp",
+      "points": 3,
+      "categories": "Trees",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Trees are essential in a nature-inclusive environment. Native trees are preferred, because these species are better suited to the local conditions and local animal species that use these trees as food.\nTrees contribute greatly to a pleasant living environment. They buffer and process rainwater and thus relieve the pressure on the sewer, they provide cooling through evaporation and capture CO2. In addition, they often increase the value of real estate, improve water and air quality, reduce noise, and thus contribute to a healthy living environment.\nTrees are grouped into three sizes:\n1st order: trees from 12 meters high\n2nd order: between 6 and 12 meters high\n3rd order: up to 6 meters high"
+        },
+        {
+          "header": "Native trees",
+          "text": "Native species that are planted as solitary trees include beech, oak, willow, lime and elm. These tall trees (1st order) provide the most shade and cover, although they can also offer a place to predators, such as large bird species. Smaller trees such as birch, alder or standard fruit trees also provide food and shelter and thus ecological value."
+        },
+        {
+          "header": "Fruit trees",
+          "text": "Fruit trees attract many animals. The little owl and the wood pigeon breed in the hollows of old trees. The tree bark is teeming with insects that serve as food for birds, such as the tree creeper and the great spotted woodpecker. In the spring, the blossom attracts bumblebees, bees and hoverflies. Dandelion, cuckoo flower and daisy grow in the grass under the fruit trees."
+        },
+        {
+          "header": "Birds",
+          "text": "Many birds benefit from the trees, such as blackbirds, song thrushes, house sparrows, tree creepers, nuthatches and tits. The jay and great spotted woodpecker are also welcome guests. Trees offer a view, food, safety and nesting opportunities."
+        },
+        {
+          "header": "Tip",
+          "text": "Pay attention to the size of the tree, you don't want the tree to get in the way in the future. It is best to use a number of different types in an area, also in a tree avenue. If there is a disease in one of the types, it does not affect all of them and new trees can easily be planted in between."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Thicket",
+      "image": "./data/youssef/images/img22.webp",
+      "points": 2,
+      "categories": "Thickets",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "In a thicket, also called a shrub, shrubs are dominant. Just like in a copse, a thicket preferably consists of native species and of prickly and berry-bearing shrubs. Bushes with berries bloom in the spring, which attracts insects. In the autumn, the berries form a food source for birds and small mammals.\nThe structure of a thicket is usually dense and virtually impenetrable. This makes it attractive to small mammals and breeding birds, even if it is a small thicket."
+        },
+        {
+          "header": "Increased natural value",
+          "text": "The natural value of a thicket increases when it connects to other thickets or to a forest (or small forest). This is because the thicket then forms a connecting zone, and animal species can move more easily through an area. If a thicket connects to a watercourse, or if it gradually changes into a herb-rich grassland on the sunlit side, then it is extra attractive to insects such as butterflies, bees and hoverflies: insects can hide there and warm up. A thicket that meets the above-mentioned components, and where there are also somewhat higher trees scattered around, has the highest value for nature."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Dimensions",
+            "text": "A thicket of 5 by 10 meters already meets the basic requirements for the less critical species. A thicket with a larger size (in length and width) is of course interesting for more species and has a higher natural value."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Branch ridge",
+      "image": "./data/youssef/images/img23.webp",
+      "points": 1,
+      "categories": "Other",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Creating a branch wall or wood pile offers the possibility to neatly and cheaply dispose of pruning and felling wood. A branch wall or wood pile is usually one to one and a half metres high. Such a wall has a lot of value for nature. By creating one, you offer food and shelter to birds, such as wrens, and insects. A branch wall or wood pile also looks better cared for than a pile of branches.\nTo create a branch pile, a construction of a double row of poles can be made with the branches in between. The length of the poles is approximately 1.5 m, of which 50 cm protrudes into the ground. The mutual distance is approximately 3 m in the length of the pile and 1 m in the width."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Perennials",
+      "image": "./data/youssef/images/img24.webp",
+      "points": 3,
+      "categories": "Thickets",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Perennials are a popular choice for gardens and landscapes because of their versatility and longevity. These plants survive multiple growing seasons and return year after year, creating a colorful and vibrant garden without the need to plant new plants each year.\nPerennials contribute to biodiversity by providing habitat and food for a variety of insects, birds, and other animals. They are often attractive to pollinators such as bees and butterflies, which is essential for the conservation of these important species.\nIn terms of maintenance, perennials are relatively easy to care for. They typically require less water and fertilizer than annuals, making them a sustainable choice for eco-friendly gardens. Additionally, many perennials are tolerant of a variety of climates and soil types, making them easy to use in a variety of environments.\nPerennials come in a wide variety of shapes, sizes, and colors, making them suitable for a variety of design styles and uses. They can be used in border plants, rockeries or even as groundcovers, making them an important part of creating attractive and functional gardens.\nThe seasonal changes of perennials also add a dynamic element to the garden. While some plants flower in spring, others are at their best in late summer or autumn, providing continuous colour and interest throughout the year."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Habitat and nest boxes",
+      "image": "./data/youssef/images/img25.webp",
+      "points": 2,
+      "categories": "Roof, facade and gardens",
+      "Target group": [
+        "Municipalities",
+        "Individuals"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "Some of the species that you find in the built environment use buildings as part of their natural habitat. These species use roof tiles, cavity walls and overhangs for their nests, hibernation, mating or resting places. This often happens in older buildings that, unlike new buildings, have many cracks and crevices. Nowadays, buildings are increasingly closed off and so these species are at risk of losing their place. In order to preserve the habitat of these species, this must therefore be taken into account in the architecture."
+        },
+        {
+          "header": "Integrating habitats into the architecture",
+          "text": "This can be done by means of common options such as special stones or cabinets. However, preference is given to integrating habitats into the architecture. This can be done in many different ways, and the possible solutions also depend strongly on the species that you want to facilitate. However, with creativity and taking this ambition into account at an early stage, architecture and ecology can go very well together. A number of relevant building-dwelling species are the house sparrow, swift, common pipistrelle, house martin and black redstart."
+        },
+        {
+          "header": "Habitat for non-building-dwelling species",
+          "text": "There are also many species that do need habitat but prefer not to settle in buildings. Habitat for these species includes grass snake mounds, hedgehog houses and nest boxes in trees. For this we would also like to refer you to the species-specific pages. A number of species with habitats in outdoor areas are grass snakes, hedgehogs, bees, owls and great tits."
+        }
+      ],
+      "guidelines": {
+        "header": "",
+        "options": []
+      }
+    },
+    {
+      "name": "Water and nature-friendly banks",
+      "image": "./data/youssef/images/img26.webp",
+      "points": 2,
+      "categories": "Water and banks",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "In contrast to pools, this type is connected to other ditches, canals or water features. It is therefore an explicit habitat for fish. Dragonfly larvae can grow in shallow parts with water plants, while a herb-rich marshy vegetation can form on the banks."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Increase in natural value",
+            "text": "The natural value of waterlines in urban areas does not so much increase with the size of the water body, but with the possibilities for varied bank and water vegetation and the functional habitat for animals that are bound to the water. The starting situation is a watercourse or water feature with steep banks. This has a basic function for fish. Biodiversity increases when the possibility for bank vegetation is present on one or both banks. A gentle, nature-friendly bank on one or both sides provides even more possibilities for flora and fauna to settle. When there are also food and cover possibilities in the immediate vicinity, in the form of scrub and/or herb-rich grassland, the habitat is complete."
+          }
+        ]
+      }
+    },
+    {
+      "name": "Zoom vegetation",
+      "image": "./data/youssef/images/img27.webp",
+      "points": 3,
+      "categories": "Thickets",
+      "Target group": [
+        "Municipalities"
+      ],
+      "sections": [
+        {
+          "header": "",
+          "text": "A mantle border is a transitional area between a grove and the surrounding environment and plays a crucial role in promoting biodiversity. This type of vegetation forms a layered structure with various plant layers, making it a real hotspot for biodiversity. The different layers attract insects such as butterflies, bees and hoverflies, which in turn provide food for birds and small mammals. This creates an ecosystem in which different animal species benefit from the presence of both food and shelter."
+        },
+        {
+          "header": "Layering as a key to species diversity",
+          "text": "The layering of a mantle border is essential for attracting a wide range of animal species. Each plant layer offers specific advantages for certain species. Birds such as the house sparrow and blackbird have different needs: a house sparrow seeks shelter in dense bushes and eats insects in spring and seeds in autumn, while a blackbird forages for insects on the ground and sings high in trees. By creating a diverse range of plants, which gradually merge into each other, different food and shelter options are offered, which promotes biodiversity."
+        },
+        {
+          "header": "The 3 layers of a mantle border",
+          "text": "Front vegetation: This layer consists of herbaceous and perennial plants, sometimes also half a shrub. This layer forms a linear connection between the shrubs and herb-rich grassland. The herbs attract insects and provide food sources for birds and small mammals.\nShrub layer (scrub): Scrub consists of native shrubs, some of which preferably bear berries. This attracts insects in the spring through flowering, and in the autumn the berries form an important food source for birds and small mammals. The dense nature of scrub also offers shelters for nesting birds and small mammals.\nTree layer: Taller trees can also be planted spread over the mantle border, which offers extra hiding and singing places for birds. These trees increase the ecological value of the area because they create an extra dimension of vertical layering."
+        },
+        {
+          "header": "Tip: Add a litter layer.",
+          "text": "There are many insects that hide in the litter layer. These insects offer a rich food source for many birds and ground-based mammals. You don't have to do much for this during construction, except for spreading any pruning waste that is created during construction. In addition, piles of stones or branches are an important breeding ground, for example for the stone marten."
+        }
+      ],
+      "guidelines": {
+        "header": "Guidelines",
+        "options": [
+          {
+            "title": "Promote layering",
+            "text": "Provide a variety of native plants in all three layers: herbs, shrubs and trees. This provides a wide range of food and shelter."
+          },
+          {
+            "title": "Use native shrubs",
+            "text": "Choose berry-bearing shrubs such as hawthorn and blackthorn. These provide insects in the spring and berries in the autumn, which ensures a continuous food supply."
+          },
+          {
+            "title": "Create connecting zones",
+            "text": "Connect the mantle border to other natural elements such as forests or waterways. This promotes the movement of species through the landscape."
+          },
+          {
+            "title": "Bigger is more robust",
+            "text": "A mantle border of 5 by 10 metres can already be ecologically valuable, but larger structures offer more benefits and support a higher natural value."
+          }
+        ]
+      }
+    }
+  ]
+}

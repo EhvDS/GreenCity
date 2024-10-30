@@ -11,7 +11,7 @@ st.title("🌳 Green and Grey Space Analysis in Rotterdam 🌆")
 st.markdown("""
 Welcome to the Green and Grey Space Analysis tool! 
 This application allows you to visualize the distribution of green and grey spaces in Rotterdam by postcode. 
-You can adjust the green space values and compare different postcodes, as well as see how Rotterdam compares to other cities.
+You can adjust the green space values and compare different postcodes, as well as see how Rotterdam compares to other cities. - Niels
 """)
 
 # City color palette for differentiation
