@@ -1,11 +1,9 @@
 import streamlit as st
 
-st.header("🌱 Sustainable Urban Development Showcase")
+st.header("🌿 Nature-Inclusive Interventions Gallery")
 
-st.markdown("""
-Welcome to the **Nature-Inclusive Interventions Gallery** – an interactive tool designed to inspire and guide eco-friendly urban planning. This gallery brings together various nature-based solutions that foster biodiversity, manage water resources effectively, and create healthier, greener cityscapes.
+st.markdown("This tool is designed to support sustainable urban development by showcasing a range of nature-inclusive interventions. Users, including project managers, citizens, and stakeholders, can explore interactive visualizations that highlight interventions for enhancing biodiversity, improving water management, and creating greener urban spaces.")
 
-Through this gallery, users can explore a curated selection of interventions, each detailed with its benefits, spatial requirements, and potential environmental impact. The goal is to offer an accessible resource that supports informed decision-making for urban planners, environmental advocates, and engaged citizens alike.
+st.markdown("The gallery provides detailed information on each intervention, including benefits, requirements, and real-world examples, to inspire and inform sustainable choices in urban planning.")
 
-**Dive into the project [here](https://intervention-gallery-poc.vercel.app/)** to explore how sustainable choices can transform our urban environments.
-""")
+st.markdown("**Explore the project [here](https://intervention-gallery-poc.vercel.app/).**")
